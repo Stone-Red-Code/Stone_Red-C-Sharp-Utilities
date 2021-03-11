@@ -43,7 +43,7 @@ Currently, only guild members with administrator rights can use this bot.
           {4,5,6 },
           {7,8,9 }
       };
-      your2dArray.PrintTable();
+      your2dArray.PrintTable(TableStyle.Default);
       ```
     * Output: 
       ```
