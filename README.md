@@ -3,7 +3,9 @@
 > Adds useful extentions.
 
 ## Install
-Currently, only guild members with administrator rights can use this bot.
+`Install-Package Stone_Red-C-Sharp-Utilities -Version 1.0.0.2`
+
+NuGet :https://www.nuget.org/packages/Stone_Red-C-Sharp-Utilities
 
 ## Namespaces
 ### Stone_Red_Utilities.ArrListExtentions
