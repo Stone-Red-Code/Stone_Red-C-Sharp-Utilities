@@ -9,6 +9,7 @@ Currently, only guild members with administrator rights can use this bot.
 ### Stone_Red_Utilities.ArrListExtentions
 #### Methods:
   * Print
+    * Description: Prints items of array not
     * Parameters: `this Array array`, `char delimiter`, `bool printToDebugConsole`
     * Example usage:
       ```cs
@@ -20,6 +21,7 @@ Currently, only guild members with administrator rights can use this bot.
       str1; str2; str3
       ```
   * Print\<T>
+    * Description: Prints items of list
     * Parameters: `this List<T> list`, `char delimiter`, `bool printToDebugConsole`
     * Example usage:
       ```cs
@@ -31,6 +33,7 @@ Currently, only guild members with administrator rights can use this bot.
       1.45; 6.24; 4.14
       ```
   * PrintTable\<T>
+    * Description: Creates and prints table from 2D array
     * Parameters: `this T[,] array`, `TableStyle tableStyle`
     * Example usage:
       ```cs
@@ -56,6 +59,7 @@ Currently, only guild members with administrator rights can use this bot.
 ### Stone_Red_Utilities.ColorConsole
 #### Methods:
   * Write
+    * Description: Writes the text representation of the specified object to the standard output stream.
     * Parameters: `object value`, `ConsoleColor color`
     * Example usage:
       ```cs
@@ -67,6 +71,7 @@ Currently, only guild members with administrator rights can use this bot.
       ```
       (Imagine that the text is actually red)
  * WriteLine
+    * Description: Writes the text representation of the specified object, followed by the current line terminator, to the standard output stream.
     * Parameters: `object value`, `ConsoleColor color`
     * Example usage:
       ```cs
@@ -82,7 +87,8 @@ Currently, only guild members with administrator rights can use this bot.
 ### Stone_Red_Utilities.BoolExtentions
 #### Methods:
   * OneWayTrue
-    * Parameters: `this ref bool bol`, `bool bol1`
+    * Description: Sets value to true if input is true. If input is false the value will not change.
+    * Parameters: `this ref bool bol`, `bool input`
     * Example usage:
       ```cs
       bool bol = false;
@@ -103,7 +109,8 @@ Currently, only guild members with administrator rights can use this bot.
       True
       ```
   * OneWayFalse
-    * Parameters: `this ref bool bol`, `bool bol1`
+    * Description: Sets value to false if input is false. If input is true the value will not change.
+    * Parameters: `this ref bool bol`, `bool input`
     * Example usage:
       ```cs
       bool bol = true;
@@ -126,6 +133,7 @@ Currently, only guild members with administrator rights can use this bot.
 ### Stone_Red_Utilities.StringExtentions
 #### Methods:
   * EqualsIgnoreCase
+    * Description: Determines whether this instance and another specified <see cref="String"/> object have the same value regardless of upper and lower case.
     * Parameters: `this string str`, `string value`
     * Example usage:
       ```cs
@@ -141,6 +149,7 @@ Currently, only guild members with administrator rights can use this bot.
       True
       ```  
   * EqualsIgnoreSpaces
+    * Description: Determines whether this instance and another specified <see cref="String"/> object have the same value regardless of spaces.
     * Parameters: `this string str`, `string value`
     * Example usage:
       ```cs
@@ -156,6 +165,7 @@ Currently, only guild members with administrator rights can use this bot.
       True
       ```  
   * EqualsIgnoreSpacesAndCase
+    * Description: Determines whether this instance and another specified <see cref="String"/> object have the same value regardless of upper and lower case and spaces.
     * Parameters: `this string str`, `string value`
     * Example usage:
       ```cs
