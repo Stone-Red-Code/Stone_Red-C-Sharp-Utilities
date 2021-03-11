@@ -133,7 +133,7 @@ Currently, only guild members with administrator rights can use this bot.
 ### Stone_Red_Utilities.StringExtentions
 #### Methods:
   * EqualsIgnoreCase
-    * Description: Determines whether this instance and another specified <see cref="String"/> object have the same value regardless of upper and lower case.
+    * Description: Determines whether this instance and another specified string object have the same value regardless of upper and lower case.
     * Parameters: `this string str`, `string value`
     * Example usage:
       ```cs
@@ -149,7 +149,7 @@ Currently, only guild members with administrator rights can use this bot.
       True
       ```  
   * EqualsIgnoreSpaces
-    * Description: Determines whether this instance and another specified <see cref="String"/> object have the same value regardless of spaces.
+    * Description: Determines whether this instance and another specified string object have the same value regardless of spaces.
     * Parameters: `this string str`, `string value`
     * Example usage:
       ```cs
@@ -165,7 +165,7 @@ Currently, only guild members with administrator rights can use this bot.
       True
       ```  
   * EqualsIgnoreSpacesAndCase
-    * Description: Determines whether this instance and another specified <see cref="String"/> object have the same value regardless of upper and lower case and spaces.
+    * Description: Determines whether this instance and another specified string object have the same value regardless of upper and lower case and spaces.
     * Parameters: `this string str`, `string value`
     * Example usage:
       ```cs
