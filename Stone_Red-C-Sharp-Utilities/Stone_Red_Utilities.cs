@@ -167,25 +167,25 @@ namespace Stone_Red_Utilities.BoolExtentions
     public static class BoolExt
     {
         /// <summary>
-        /// Sets value to true if input is false. If input is true the value will not change.
+        /// Sets value to true if input is true. If input is false the value will not change.
         /// </summary>
         /// <param name="bol"></param>
-        /// <param name="bol1"></param>
-        public static void OneWayFalse(this ref bool bol, bool bol1)
+        /// <param name="input"></param>
+        public static void OneWayTrue(this ref bool bol, bool input)
         {
-            if (bol == true && !bol1)
+            if (bol == false && input)
                 bol = true;
         }
 
         /// <summary>
-        /// Sets value to true if input is true. If input is false the value will not change.
+        /// Sets value to false if input is false. If input is true the value will not change.
         /// </summary>
         /// <param name="bol"></param>
-        /// <param name="bol1"></param>
-        public static void OneWayTrue(this ref bool bol, bool bol1)
+        /// <param name="input"></param>
+        public static void OneWayFalse(this ref bool bol, bool input)
         {
-            if (bol == false && bol1)
-                bol = true;
+            if (bol == true && !input)
+                bol = false;
         }
     }
 }
@@ -239,7 +239,7 @@ namespace Stone_Red_Utilities.StringExtentions
     public static class StringExt
     {
         /// <summary>
-        /// Determines whether this string and a specified <see cref="String"/> object have the same value regardless of upper and lower case. A parameter specifies the culture, case, and sort rules used in the comparison.
+        /// Determines whether this instance and another specified <see cref="String"/> object have the same value regardless of upper and lower case.
         /// </summary>
         /// <param name="value"></param>
         /// <param name="str"></param>
@@ -250,7 +250,7 @@ namespace Stone_Red_Utilities.StringExtentions
         }
 
         /// <summary>
-        /// Determines whether this string and a specified <see cref="String"/> object have the same value regardless of spaces. A parameter specifies the culture, case, and sort rules used in the comparison.
+        /// Determines whether this instance and another specified <see cref="String"/> object have the same value regardless of spaces.
         /// </summary>
         /// <param name="value"></param>
         /// <param name="str"></param>
@@ -261,7 +261,7 @@ namespace Stone_Red_Utilities.StringExtentions
         }
 
         /// <summary>
-        /// Determines whether this string and a specified <see cref="String"/> object have the same value regardless of upper and lower case and spaces. A parameter specifies the culture, case, and sort rules used in the comparison.
+        /// Determines whether this instance and another specified <see cref="String"/> object have the same value regardless of upper and lower case and spaces.
         /// </summary>
         /// <param name="value"></param>
         /// <param name="str"></param>

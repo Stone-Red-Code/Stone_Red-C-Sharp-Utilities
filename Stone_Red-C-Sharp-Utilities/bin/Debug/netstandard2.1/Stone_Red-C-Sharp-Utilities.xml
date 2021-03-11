@@ -63,16 +63,16 @@
             <see cref="T:System.Boolean"/> Extentions
             </summary>
         </member>
-        <member name="M:Stone_Red_Utilities.BoolExtentions.BoolExt.OneWayFalse(System.Boolean@,System.Boolean)">
+        <member name="M:Stone_Red_Utilities.BoolExtentions.BoolExt.OneWayTrue(System.Boolean@,System.Boolean)">
             <summary>
-            Sets value to true if input is false. If input is true the value will not change.
+            Sets value to true if input is true. If input is false the value will not change.
             </summary>
             <param name="bol"></param>
             <param name="bol1"></param>
         </member>
-        <member name="M:Stone_Red_Utilities.BoolExtentions.BoolExt.OneWayTrue(System.Boolean@,System.Boolean)">
+        <member name="M:Stone_Red_Utilities.BoolExtentions.BoolExt.OneWayFalse(System.Boolean@,System.Boolean)">
             <summary>
-            Sets value to true if input is true. If input is false the value will not change.
+            Sets value to false if input is false. If input is true the value will not change.
             </summary>
             <param name="bol"></param>
             <param name="bol1"></param>

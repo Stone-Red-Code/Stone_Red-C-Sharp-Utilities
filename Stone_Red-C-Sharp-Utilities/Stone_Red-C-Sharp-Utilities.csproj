@@ -6,7 +6,15 @@
     <Authors>Stone_Red</Authors>
     <PackageTags>Console, Table, Print</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>Adds useful console extentions.</Description>
+    <Description>Adds useful extentions.</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Stone-Red-Code/Stone_Red-C-Sharp-Utilities</RepositoryUrl>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <FileVersion>1.0.0.2</FileVersion>
+    <Version>1.0.0.2</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -16,5 +24,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>C:\Users\David\Google Drive\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities.xml</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
