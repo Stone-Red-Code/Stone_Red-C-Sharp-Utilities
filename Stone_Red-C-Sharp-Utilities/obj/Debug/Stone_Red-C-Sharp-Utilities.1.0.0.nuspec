@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Stone_Red-C-Sharp-Utilities</id>
+    <version>1.0.0</version>
+    <authors>Stone_Red</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Adds useful console extentions.</description>
+    <tags>Console, Table, Print</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\David\Google Drive\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\bin\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.dll" target="lib\netstandard2.1\Stone_Red-C-Sharp-Utilities.dll" />
+    <file src="C:\Users\David\Google Drive\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\bin\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.xml" target="lib\netstandard2.1\Stone_Red-C-Sharp-Utilities.xml" />
+  </files>
+</package>

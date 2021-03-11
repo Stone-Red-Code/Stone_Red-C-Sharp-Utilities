@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Stone_Red-C-Sharp-Utilities</name>
+    </assembly>
+    <members>
+        <member name="T:Stone_Red_Utilities.ArrListExtentions.TableStyle">
+            <summary>
+            Table Style
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.ArrListExtentions.TableStyle.Default">
+            <summary>
+            The default representaion of the table
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.ArrListExtentions.TableStyle.Minimum">
+            <summary>
+            The minimal representation of the table
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.ArrListExtentions.TableStyle.Alternative">
+            <summary>
+            The alternative representaion of the table
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.ArrListExtentions.TableStyle.List">
+            <summary>
+            The list representaion of the table
+            </summary>
+        </member>
+        <member name="T:Stone_Red_Utilities.ArrListExtentions.ArrayListExt">
+            <summary>
+            <see cref="T:System.Array"/> and <see cref="T:System.Collections.Generic.List`1"/> Extentions
+            </summary>
+        </member>
+        <member name="M:Stone_Red_Utilities.ArrListExtentions.ArrayListExt.Print(System.Array,System.Char,System.Boolean)">
+            <summary>
+            Prints items of array not
+            </summary>
+            <param name="array"></param>
+            <param name="delimiter"></param>
+            <param name="printToDebugConsole"></param>
+        </member>
+        <member name="M:Stone_Red_Utilities.ArrListExtentions.ArrayListExt.Print``1(System.Collections.Generic.List{``0},System.Char,System.Boolean)">
+            <summary>
+            Prints items of list
+            </summary>
+            <param name="list"></param>
+            <param name="delimiter"></param>
+            <param name="printToDebugConsole"></param>
+        </member>
+        <member name="M:Stone_Red_Utilities.ArrListExtentions.ArrayListExt.PrintTable``1(``0[0:,0:],Stone_Red_Utilities.ArrListExtentions.TableStyle)">
+            <summary>
+            Creates and prints table from 2D array
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="array"></param>
+            <param name="tableStyle"></param>
+        </member>
+        <member name="T:Stone_Red_Utilities.BoolExtentions.BoolExt">
+            <summary>
+            <see cref="T:System.Boolean"/> Extentions
+            </summary>
+        </member>
+        <member name="M:Stone_Red_Utilities.BoolExtentions.BoolExt.OneWayFalse(System.Boolean@,System.Boolean)">
+            <summary>
+            Sets value to true if input is false. If input is true the value will not change.
+            </summary>
+            <param name="bol"></param>
+            <param name="bol1"></param>
+        </member>
+        <member name="M:Stone_Red_Utilities.BoolExtentions.BoolExt.OneWayTrue(System.Boolean@,System.Boolean)">
+            <summary>
+            Sets value to true if input is true. If input is false the value will not change.
+            </summary>
+            <param name="bol"></param>
+            <param name="bol1"></param>
+        </member>
+        <member name="T:Stone_Red_Utilities.ColorConsole.ConsoleExt">
+            <summary>
+            Console Extentions
+            </summary>
+        </member>
+        <member name="M:Stone_Red_Utilities.ColorConsole.ConsoleExt.Write(System.Object,System.ConsoleColor)">
+            <summary>
+            Writes the text representation of the specified object to the standard output stream.
+            </summary>
+            <param name="value"></param>
+            <param name="color"></param>
+        </member>
+        <member name="M:Stone_Red_Utilities.ColorConsole.ConsoleExt.WriteLine(System.Object,System.ConsoleColor)">
+            <summary>
+            Writes the text representation of the specified object, followed by the current line terminator, to the standard output stream.
+            </summary>
+            <param name="value"></param>
+            <param name="color"></param>
+        </member>
+        <member name="T:Stone_Red_Utilities.StringExtentions.StringExt">
+            <summary>
+            <see cref="T:System.String"/> Extentions
+            </summary>
+        </member>
+        <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.EqualsIgnoreCase(System.String,System.String)">
+            <summary>
+            Determines whether this string and a specified <see cref="T:System.String"/> object have the same value regardless of upper and lower case. A parameter specifies the culture, case, and sort rules used in the comparison.
+            </summary>
+            <param name="value"></param>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.EqualsIgnoreSpaces(System.String,System.String)">
+            <summary>
+            Determines whether this string and a specified <see cref="T:System.String"/> object have the same value regardless of spaces. A parameter specifies the culture, case, and sort rules used in the comparison.
+            </summary>
+            <param name="value"></param>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.EqualsIgnoreSpacesAndCase(System.String,System.String)">
+            <summary>
+            Determines whether this string and a specified <see cref="T:System.String"/> object have the same value regardless of upper and lower case and spaces. A parameter specifies the culture, case, and sort rules used in the comparison.
+            </summary>
+            <param name="value"></param>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.ToFileName(System.String,System.Boolean)">
+            <summary>
+            Removes all invalid chars from file name
+            </summary>
+            <param name="str"></param>
+            <param name="allowSpaces"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
