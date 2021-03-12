@@ -81,7 +81,7 @@ NuGet: https://www.nuget.org/packages/Stone_Red-C-Sharp-Utilities
       ```
     * Output:
       ```
-      text in red
+      text in green
 
       ```
       (Imagine that the text is actually green)
