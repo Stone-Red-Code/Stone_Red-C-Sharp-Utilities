@@ -11,7 +11,7 @@ NuGet: https://www.nuget.org/packages/Stone_Red-C-Sharp-Utilities
 ### Stone_Red_Utilities.ArrListExtentions
 #### Methods:
   * Print
-    * Description: Prints items of array not
+    * Description: Prints items of array
     * Parameters: `this Array array`, `char delimiter`, `bool printToDebugConsole`
     * Example usage:
       ```cs
