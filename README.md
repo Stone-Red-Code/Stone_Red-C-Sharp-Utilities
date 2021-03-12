@@ -1,6 +1,6 @@
 # Stone_Red-C-Sharp-Utilities
 
-> Adds useful extentions.
+> Adds useful C# methods.
 
 ## Install
 `Install-Package Stone_Red-C-Sharp-Utilities -Version 1.0.0.2`
