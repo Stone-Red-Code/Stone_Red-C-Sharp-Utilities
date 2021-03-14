@@ -36,7 +36,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.ArrListExtentions.ArrayListExt.Print(System.Array,System.Char,System.Boolean)">
             <summary>
-            Prints items of array not
+            Prints items of array
             </summary>
             <param name="array"></param>
             <param name="delimiter"></param>
@@ -68,14 +68,14 @@
             Sets value to true if input is true. If input is false the value will not change.
             </summary>
             <param name="bol"></param>
-            <param name="bol1"></param>
+            <param name="input"></param>
         </member>
         <member name="M:Stone_Red_Utilities.BoolExtentions.BoolExt.OneWayFalse(System.Boolean@,System.Boolean)">
             <summary>
             Sets value to false if input is false. If input is true the value will not change.
             </summary>
             <param name="bol"></param>
-            <param name="bol1"></param>
+            <param name="input"></param>
         </member>
         <member name="T:Stone_Red_Utilities.ColorConsole.ConsoleExt">
             <summary>
@@ -103,7 +103,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.EqualsIgnoreCase(System.String,System.String)">
             <summary>
-            Determines whether this string and a specified <see cref="T:System.String"/> object have the same value regardless of upper and lower case. A parameter specifies the culture, case, and sort rules used in the comparison.
+            Determines whether this instance and another specified <see cref="T:System.String"/> object have the same value regardless of upper and lower case.
             </summary>
             <param name="value"></param>
             <param name="str"></param>
@@ -111,7 +111,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.EqualsIgnoreSpaces(System.String,System.String)">
             <summary>
-            Determines whether this string and a specified <see cref="T:System.String"/> object have the same value regardless of spaces. A parameter specifies the culture, case, and sort rules used in the comparison.
+            Determines whether this instance and another specified <see cref="T:System.String"/> object have the same value regardless of spaces.
             </summary>
             <param name="value"></param>
             <param name="str"></param>
@@ -119,7 +119,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.EqualsIgnoreSpacesAndCase(System.String,System.String)">
             <summary>
-            Determines whether this string and a specified <see cref="T:System.String"/> object have the same value regardless of upper and lower case and spaces. A parameter specifies the culture, case, and sort rules used in the comparison.
+            Determines whether this instance and another specified <see cref="T:System.String"/> object have the same value regardless of upper and lower case and spaces.
             </summary>
             <param name="value"></param>
             <param name="str"></param>

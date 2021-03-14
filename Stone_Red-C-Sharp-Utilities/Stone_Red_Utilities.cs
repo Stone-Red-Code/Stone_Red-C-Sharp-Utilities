@@ -39,7 +39,7 @@ namespace Stone_Red_Utilities.ArrListExtentions
     public static class ArrayListExt
     {
         /// <summary>
-        /// Prints items of array not
+        /// Prints items of array
         /// </summary>
         /// <param name="array"></param>
         /// <param name="delimiter"></param>

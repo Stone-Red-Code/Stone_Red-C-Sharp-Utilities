@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
-      "Stone_Red-C-Sharp-Utilities/1.0.0": {
+      "Stone_Red-C-Sharp-Utilities/1.0.0.2": {
         "runtime": {
           "Stone_Red-C-Sharp-Utilities.dll": {}
         }
@@ -15,7 +15,7 @@
     }
   },
   "libraries": {
-    "Stone_Red-C-Sharp-Utilities/1.0.0": {
+    "Stone_Red-C-Sharp-Utilities/1.0.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
