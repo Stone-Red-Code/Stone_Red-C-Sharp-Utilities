@@ -77,24 +77,152 @@
             <param name="bol"></param>
             <param name="input"></param>
         </member>
-        <member name="T:Stone_Red_Utilities.ColorConsole.ConsoleExt">
+        <member name="T:Stone_Red_Utilities.ConsoleExtentions.ConsoleExt">
             <summary>
             Console Extentions
             </summary>
         </member>
-        <member name="M:Stone_Red_Utilities.ColorConsole.ConsoleExt.Write(System.Object,System.ConsoleColor)">
+        <member name="M:Stone_Red_Utilities.ConsoleExtentions.ConsoleExt.Write(System.Object,System.ConsoleColor)">
             <summary>
             Writes the text representation of the specified object to the standard output stream.
             </summary>
             <param name="value"></param>
             <param name="color"></param>
         </member>
-        <member name="M:Stone_Red_Utilities.ColorConsole.ConsoleExt.WriteLine(System.Object,System.ConsoleColor)">
+        <member name="M:Stone_Red_Utilities.ConsoleExtentions.ConsoleExt.WriteLine(System.Object,System.ConsoleColor)">
             <summary>
             Writes the text representation of the specified object, followed by the current line terminator, to the standard output stream.
             </summary>
             <param name="value"></param>
             <param name="color"></param>
+        </member>
+        <member name="T:Stone_Red_Utilities.Logging.LogTarget">
+            <summary>
+            Specifies the severity of the log target.
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.Logging.LogTarget.Console">
+            <summary>
+            Writes log to console
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.Logging.LogTarget.DebugConsole">
+            <summary>
+            Writes log to debug console
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.Logging.LogTarget.File">
+            <summary>
+            Writes log to file
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.Logging.LogTarget.ConsoleAndFile">
+            <summary>
+            Writes log to console and file
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.Logging.LogTarget.DebugAndFile">
+            <summary>
+            Writes log to debug console and file
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.Logging.LogTarget.All">
+            <summary>
+            Writes log to console debug console and file
+            </summary>
+        </member>
+        <member name="T:Stone_Red_Utilities.Logging.LogSeverity">
+            <summary>
+            Specifies the severity of the log message.
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.Logging.LogSeverity.Debug">
+            <summary>
+            Logs that contain the most detailed messages.
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.Logging.LogSeverity.Info">
+            <summary>
+            Logs that track the general flow of the application.
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.Logging.LogSeverity.Warning">
+            <summary>
+            Logs that highlight an abnormal activity in the flow of execution.
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.Logging.LogSeverity.Error">
+            <summary>
+            Logs that highlight when the flow of execution is stopped due to a failure.
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.Logging.LogSeverity.Fatal">
+            <summary>
+            Logs that contain the most severe level of error. This type of error indicate that immediate attention may be required.
+            </summary>
+        </member>
+        <member name="T:Stone_Red_Utilities.Logging.Logger">
+            <summary>
+            Class used for logging
+            </summary>
+        </member>
+        <member name="P:Stone_Red_Utilities.Logging.Logger.ConsoleLogFormat">
+            <summary>
+            Format that is used when logging to the console
+            </summary>
+        </member>
+        <member name="P:Stone_Red_Utilities.Logging.Logger.DebugConsoleLogFormat">
+            <summary>
+            Format that is used when logging to the debug console
+            </summary>
+        </member>
+        <member name="P:Stone_Red_Utilities.Logging.Logger.FileLogFormat">
+            <summary>
+            Format that is used when logging to a file
+            </summary>
+        </member>
+        <member name="M:Stone_Red_Utilities.Logging.Logger.#ctor(Stone_Red_Utilities.Logging.LogTarget,System.String,System.String)">
+            <summary>
+            Initializes the logger with the default format
+            </summary>
+            <param name="defaultFormat"></param>
+            <param name="logTarg"></param>
+            <param name="file"></param>
+        </member>
+        <member name="M:Stone_Red_Utilities.Logging.Logger.#ctor(Stone_Red_Utilities.Logging.LogTarget,System.String)">
+            <summary>
+            Initializes the logger with the default format
+            </summary>
+            <param name="defaultFormat"></param>
+            <param name="logTarg"></param>
+        </member>
+        <member name="M:Stone_Red_Utilities.Logging.Logger.Log(System.String,System.String,Stone_Red_Utilities.Logging.LogSeverity,System.String,System.String,System.Int32)">
+            <summary>
+            Log the message to the specified output
+            </summary>
+            <param name="message"></param>
+            <param name="source"></param>
+            <param name="logSeverity"></param>
+            <param name="memberName"></param>
+            <param name="sourceFilePath"></param>
+            <param name="sourceLineNumber"></param>
+        </member>
+        <member name="M:Stone_Red_Utilities.Logging.Logger.LogIf(System.Boolean,System.String,System.String,Stone_Red_Utilities.Logging.LogSeverity,System.String,System.String,System.Int32)">
+            <summary>
+            Log the message to the specified output when the condition is met
+            </summary>
+            <param name="condition"></param>
+            <param name="message"></param>
+            <param name="source"></param>
+            <param name="logSeverity"></param>
+            <param name="memberName"></param>
+            <param name="sourceFilePath"></param>
+            <param name="sourceLineNumber"></param>
+        </member>
+        <member name="M:Stone_Red_Utilities.Logging.Logger.ClearLogFile">
+            <summary>
+            Clears log file
+            </summary>
         </member>
         <member name="T:Stone_Red_Utilities.StringExtentions.StringExt">
             <summary>
@@ -131,6 +259,23 @@
             </summary>
             <param name="str"></param>
             <param name="allowSpaces"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.Truncate(System.String,System.Int32)">
+            <summary>
+            Truncates a string to the specified length.
+            </summary>
+            <param name="str"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.Truncate(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Truncates a string to the specified length.
+            </summary>
+            <param name="str"></param>
+            <param name="length"></param>
+            <param name="ellipsis"></param>
             <returns></returns>
         </member>
     </members>
