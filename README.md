@@ -3,7 +3,7 @@
 > Adds useful C# methods.
 
 ## Install
-`Install-Package Stone_Red-C-Sharp-Utilities
+`Install-Package Stone_Red-C-Sharp-Utilities`
 
 NuGet: https://www.nuget.org/packages/Stone_Red-C-Sharp-Utilities
 
