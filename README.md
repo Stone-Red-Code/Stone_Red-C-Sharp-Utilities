@@ -232,7 +232,3 @@ https://www.nuget.org/packages/Stone_Red-C-Sharp-Utilities
       ```cs
       logger.ClearLogFile();
       ```
-    * Output (Depends on the specified log format):
-      ```
-      19:15:14 | Error   | Update manager  | something happend
-      ```  
