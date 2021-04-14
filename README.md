@@ -1,6 +1,6 @@
 # Stone_Red-C-Sharp-Utilities
 
-> Adds useful C# methods.
+> Provides useful C# methods.
 
 ## Install
 
@@ -64,7 +64,7 @@ https://www.nuget.org/packages/Stone_Red-C-Sharp-Utilities
       -------------
       ```
       
-### Stone_Red_Utilities.ColorConsole
+### Stone_Red_Utilities.ConsoleExtentions
 #### Methods:
   * Write
     * Description: Writes the text representation of the specified object to the standard output stream.
@@ -187,3 +187,52 @@ https://www.nuget.org/packages/Stone_Red-C-Sharp-Utilities
       ```
       True
       ```
+### Stone_Red_Utilities.Logging
+#### Constructors:
+  * Logger
+      * Initializes the logger with the default format.
+    * Parameters: `LogTarget logTarg`, `string defaultFormat`
+    * Example usage:
+      ```cs
+      Logger logger = new Logger(LogTarget.Console, "{<dateTime>:HH:mm:ss} | {<level>,-7} | {<source>,-15} | {<message>}");
+      ```
+  * Logger
+      * Initializes the logger with the default format and a file path.
+    * Parameters: `LogTarget logTarg`, `string file`, `string defaultFormat`
+    * Example usage:
+      ```cs
+      Logger logger = new Logger(LogTarget.ConsoleAndFile, "events.log", "{<dateTime>:HH:mm:ss} | {<level>,-7} | {<source>,-15} | {<message>}");
+      ```
+#### Methods:
+  * Log
+    * Description: Log the message to the specified output
+    * Parameters: `string message`, `string source`, `LogSeverity logSeverity`
+    * Example usage:
+      ```cs
+      logger.Log("something happend", "Update manager", LogSeverity.Error);
+      ```
+    * Output (Depends on the specified log format):
+      ```
+      19:15:14 | Error   | Update manager  | something happend
+      ```
+  * LogIf
+    * Description: Log the message to the specified output if the condition is met
+    * Parameters: `bool condition`, `string message`, `string source`, `LogSeverity logSeverity`
+    * Example usage:
+      ```cs
+      logger.Log(IsValid(),"something is invalid", "Setup", LogSeverity.Error);
+      ```
+    * Output (Depends on the specified log format):
+      ```
+      19:15:14 | Error   | Update manager  | something happend
+      ```
+  * ClearLogFile
+    * Description: Clears the log file
+    * Example usage:
+      ```cs
+      logger.ClearLogFile();
+      ```
+    * Output (Depends on the specified log format):
+      ```
+      19:15:14 | Error   | Update manager  | something happend
+      ```  

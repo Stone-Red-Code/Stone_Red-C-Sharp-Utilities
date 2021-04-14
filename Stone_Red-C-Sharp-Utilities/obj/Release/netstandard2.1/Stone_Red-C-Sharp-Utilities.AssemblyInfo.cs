@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Adds useful extentions.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.2")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Stone_Red-C-Sharp-Utilities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Stone_Red-C-Sharp-Utilities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.2")]

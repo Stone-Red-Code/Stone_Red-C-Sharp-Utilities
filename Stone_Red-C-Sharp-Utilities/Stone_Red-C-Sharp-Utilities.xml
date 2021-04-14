@@ -96,6 +96,13 @@
             <param name="value"></param>
             <param name="color"></param>
         </member>
+        <member name="M:Stone_Red_Utilities.ConsoleExtentions.ConsoleExt.Pause(System.Boolean,System.String)">
+            <summary>
+            Suspends execution until the user presses a key
+            </summary>
+            <param name="enterKeyOnly"></param>
+            <param name="customMessage"></param>
+        </member>
         <member name="T:Stone_Red_Utilities.Logging.LogTarget">
             <summary>
             Specifies the severity of the log target.
@@ -183,7 +190,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.Logging.Logger.#ctor(Stone_Red_Utilities.Logging.LogTarget,System.String,System.String)">
             <summary>
-            Initializes the logger with the default format
+            Initializes the logger with the default format and a file path
             </summary>
             <param name="defaultFormat"></param>
             <param name="logTarg"></param>
@@ -209,7 +216,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.Logging.Logger.LogIf(System.Boolean,System.String,System.String,Stone_Red_Utilities.Logging.LogSeverity,System.String,System.String,System.Int32)">
             <summary>
-            Log the message to the specified output when the condition is met
+            Log the message to the specified output if the condition is met
             </summary>
             <param name="condition"></param>
             <param name="message"></param>
@@ -221,7 +228,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.Logging.Logger.ClearLogFile">
             <summary>
-            Clears log file
+            Clears the log file
             </summary>
         </member>
         <member name="T:Stone_Red_Utilities.StringExtentions.StringExt">

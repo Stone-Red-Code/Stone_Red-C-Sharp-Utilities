@@ -97,7 +97,7 @@ namespace Stone_Red_Utilities.Logging
         public string FileLogFormat { get; set; }
 
         /// <summary>
-        /// Initializes the logger with the default format
+        /// Initializes the logger with the default format and a file path
         /// </summary>
         /// <param name="defaultFormat"></param>
         /// <param name="logTarg"></param>
@@ -105,7 +105,7 @@ namespace Stone_Red_Utilities.Logging
         public Logger(LogTarget logTarg = LogTarget.Console, string file = null, string defaultFormat = "{<dateTime>:HH:mm:ss} | {<level>,-7} | {<source>,-15} | {<message>}")
         {
             if (logTarg == LogTarget.ConsoleAndFile || logTarg == LogTarget.DebugAndFile || logTarg == LogTarget.File || logTarg == LogTarget.All)
-                logPath = file ?? throw new ArgumentNullException($"file can't be null!");
+                logPath = file ?? throw new ArgumentNullException(nameof(file), $"file can't be null!");
 
             logTarget = logTarg;
             ConsoleLogFormat = defaultFormat;
@@ -121,7 +121,7 @@ namespace Stone_Red_Utilities.Logging
         public Logger(LogTarget logTarg = LogTarget.Console, string defaultFormat = "{<dateTime:HH:mm:ss>} | {<level>,-7} | {<source>,-15} | {<message>}")
         {
             if (logTarg == LogTarget.ConsoleAndFile || logTarg == LogTarget.DebugAndFile || logTarg == LogTarget.File || logTarg == LogTarget.All)
-                throw new ArgumentNullException($"file can't be null!");
+                throw new ArgumentNullException("file", $"file can't be null!");
 
             logTarget = logTarg;
             ConsoleLogFormat = defaultFormat;
@@ -144,7 +144,7 @@ namespace Stone_Red_Utilities.Logging
         }
 
         /// <summary>
-        /// Log the message to the specified output when the condition is met
+        /// Log the message to the specified output if the condition is met
         /// </summary>
         /// <param name="condition"></param>
         /// <param name="message"></param>
@@ -160,7 +160,7 @@ namespace Stone_Red_Utilities.Logging
         }
 
         /// <summary>
-        /// Clears log file
+        /// Clears the log file
         /// </summary>
         public void ClearLogFile()
         {
@@ -221,7 +221,7 @@ namespace Stone_Red_Utilities.Logging
             };
         }
 
-        private string GetFormattedString(string format, LogSeverity logSeverity, string source, string message, string memberName = "", string sourceFilePath = "", int sourceLineNumber = 0)
+        private string GetFormattedString(string format, LogSeverity logSeverity, string source, string message, string memberName, string sourceFilePath, int sourceLineNumber)
         {
             format = format
                .Replace("<dateTime>", "0")
