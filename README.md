@@ -8,7 +8,7 @@
 `Install-Package Stone_Red-C-Sharp-Utilities`
 
 ### .NET CLI
-`dotnet add package Stone_Red-C-Sharp-Utilities --version 1.0.1`
+`dotnet add package Stone_Red-C-Sharp-Utilities`
 
 ### NuGet
 https://www.nuget.org/packages/Stone_Red-C-Sharp-Utilities
