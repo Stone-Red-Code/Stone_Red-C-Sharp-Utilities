@@ -123,16 +123,6 @@
             Writes log to file
             </summary>
         </member>
-        <member name="F:Stone_Red_Utilities.Logging.LogTarget.ConsoleAndFile">
-            <summary>
-            Writes log to console and file
-            </summary>
-        </member>
-        <member name="F:Stone_Red_Utilities.Logging.LogTarget.DebugAndFile">
-            <summary>
-            Writes log to debug console and file
-            </summary>
-        </member>
         <member name="F:Stone_Red_Utilities.Logging.LogTarget.All">
             <summary>
             Writes log to console debug console and file
@@ -195,13 +185,6 @@
             <param name="defaultFormat"></param>
             <param name="logTarg"></param>
             <param name="file"></param>
-        </member>
-        <member name="M:Stone_Red_Utilities.Logging.Logger.#ctor(Stone_Red_Utilities.Logging.LogTarget,System.String)">
-            <summary>
-            Initializes the logger with the default format
-            </summary>
-            <param name="defaultFormat"></param>
-            <param name="logTarg"></param>
         </member>
         <member name="M:Stone_Red_Utilities.Logging.Logger.Log(System.String,System.String,Stone_Red_Utilities.Logging.LogSeverity,System.String,System.String,System.Int32)">
             <summary>

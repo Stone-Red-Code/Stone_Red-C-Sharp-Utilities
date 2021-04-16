@@ -27,16 +27,6 @@ namespace Stone_Red_Utilities.Logging
         File,
 
         /// <summary>
-        /// Writes log to console and file
-        /// </summary>
-        ConsoleAndFile,
-
-        /// <summary>
-        /// Writes log to debug console and file
-        /// </summary>
-        DebugAndFile,
-
-        /// <summary>
         /// Writes log to console debug console and file
         /// </summary>
         All
@@ -104,24 +94,8 @@ namespace Stone_Red_Utilities.Logging
         /// <param name="file"></param>
         public Logger(LogTarget logTarg = LogTarget.Console, string file = null, string defaultFormat = "{<dateTime>:HH:mm:ss} | {<level>,-7} | {<source>,-15} | {<message>}")
         {
-            if (logTarg == LogTarget.ConsoleAndFile || logTarg == LogTarget.DebugAndFile || logTarg == LogTarget.File || logTarg == LogTarget.All)
+            if ((logTarg & LogTarget.File) == LogTarget.File || (logTarg & LogTarget.All) == LogTarget.All)
                 logPath = file ?? throw new ArgumentNullException(nameof(file), $"file can't be null!");
-
-            logTarget = logTarg;
-            ConsoleLogFormat = defaultFormat;
-            DebugConsoleLogFormat = defaultFormat;
-            FileLogFormat = defaultFormat;
-        }
-
-        /// <summary>
-        /// Initializes the logger with the default format
-        /// </summary>
-        /// <param name="defaultFormat"></param>
-        /// <param name="logTarg"></param>
-        public Logger(LogTarget logTarg = LogTarget.Console, string defaultFormat = "{<dateTime:HH:mm:ss>} | {<level>,-7} | {<source>,-15} | {<message>}")
-        {
-            if (logTarg == LogTarget.ConsoleAndFile || logTarg == LogTarget.DebugAndFile || logTarg == LogTarget.File || logTarg == LogTarget.All)
-                throw new ArgumentNullException("file", $"file can't be null!");
 
             logTarget = logTarg;
             ConsoleLogFormat = defaultFormat;
@@ -174,38 +148,24 @@ namespace Stone_Red_Utilities.Logging
             string debugOutput = GetFormattedString(DebugConsoleLogFormat, logSeverity, source, message, memberName, sourceFilePath, sourceLineNumber);
             string fileOutput = GetFormattedString(FileLogFormat, logSeverity, source, message, memberName, sourceFilePath, sourceLineNumber);
 
-            switch (logTarget)
+            if ((logTarget & LogTarget.Console) == LogTarget.Console)
             {
-                case LogTarget.Console:
-                    ConsoleExt.WriteLine(consoleOutput, GetColor(logSeverity));
-                    break;
+                ConsoleExt.WriteLine(consoleOutput, GetColor(logSeverity));
+            }
 
-                case LogTarget.DebugConsole:
-                    Debug.WriteLine(debugOutput);
-                    break;
+            if ((logTarget & LogTarget.DebugConsole) == LogTarget.DebugConsole)
+            {
+                Debug.WriteLine(debugOutput);
+            }
 
-                case LogTarget.File:
-                    File.AppendAllLines(logPath, new[] { fileOutput });
-                    break;
+            if ((logTarget & LogTarget.File) == LogTarget.File)
+                File.AppendAllLines(logPath, new[] { fileOutput });
 
-                case LogTarget.ConsoleAndFile:
-                    ConsoleExt.WriteLine(consoleOutput, GetColor(logSeverity));
-                    File.AppendAllLines(logPath, new[] { fileOutput });
-                    break;
-
-                case LogTarget.DebugAndFile:
-                    Debug.WriteLine(debugOutput);
-                    File.AppendAllLines(logPath, new[] { fileOutput });
-                    break;
-
-                case LogTarget.All:
-                    Debug.WriteLine(debugOutput);
-                    ConsoleExt.WriteLine(consoleOutput, GetColor(logSeverity));
-                    File.AppendAllLines(logPath, new[] { fileOutput });
-                    break;
-
-                default:
-                    throw new ArgumentException("Log target type not valid!");
+            if ((logTarget & LogTarget.All) == LogTarget.All)
+            {
+                Debug.WriteLine(debugOutput);
+                ConsoleExt.WriteLine(consoleOutput, GetColor(logSeverity));
+                File.AppendAllLines(logPath, new[] { fileOutput });
             }
         }
 

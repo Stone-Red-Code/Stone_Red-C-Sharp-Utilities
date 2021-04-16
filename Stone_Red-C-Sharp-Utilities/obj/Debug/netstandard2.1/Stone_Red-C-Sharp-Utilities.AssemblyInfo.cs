@@ -13,12 +13,12 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Stone_Red")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("Adds useful extentions.")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.2")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.2")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Adds useful methods")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.1.1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1.1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Stone_Red-C-Sharp-Utilities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Stone_Red-C-Sharp-Utilities")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.2")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.1.1")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/Stone-Red-Code/Stone_Red-C-Sharp-Utilities")]
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("en")]
 

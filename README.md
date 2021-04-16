@@ -188,14 +188,7 @@ https://www.nuget.org/packages/Stone_Red-C-Sharp-Utilities
       True
       ```
 ### Stone_Red_Utilities.Logging
-#### Constructors:
-  * Logger
-      * Initializes the logger with the default format.
-    * Parameters: `LogTarget logTarg`, `string defaultFormat`
-    * Example usage:
-      ```cs
-      Logger logger = new Logger(LogTarget.Console, "{<dateTime>:HH:mm:ss} | {<level>,-7} | {<source>,-15} | {<message>}");
-      ```
+#### Constructor:
   * Logger
       * Initializes the logger with the default format and a file path.
     * Parameters: `LogTarget logTarg`, `string file`, `string defaultFormat`
