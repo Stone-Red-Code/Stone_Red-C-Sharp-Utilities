@@ -213,7 +213,7 @@ https://www.nuget.org/packages/Stone_Red-C-Sharp-Utilities
     * Parameters: `bool condition`, `string message`, `string source`, `LogSeverity logSeverity`
     * Example usage:
       ```cs
-      logger.Log(IsValid(),"something is invalid", "Setup", LogSeverity.Error);
+      logger.Log(IsValid(),"something is invalid", "Update manager", LogSeverity.Error);
       ```
     * Output (Depends on the specified log format):
       ```
