@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Stone_Red-C-Sharp-Utilities</id>
-    <version>1.0.1.1</version>
+    <version>1.0.1.2</version>
     <authors>Stone_Red</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">LICENSE</license>

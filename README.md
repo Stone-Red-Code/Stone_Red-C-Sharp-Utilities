@@ -137,8 +137,47 @@ https://www.nuget.org/packages/Stone_Red-C-Sharp-Utilities
       False
       False
       ```
+* ToInt
+    * Description: Converts bool to int.
+    * Parameters: `this bool bol`
+    * Example usage:
+      ```cs
+      bool bol1 = false;
+      bool bol2 = true;
+
+      int i = bol1.ToInt();
+      int j = bol2.ToInt();
+
+      Console.WriteLine(i);
+      Console.WriteLine(j);
+      ```
+    * Output:
+      ```
+      0
+      1
+      ```
+* FromInt
+    * Description: Converts int to bool.
+    * Parameters: `this ref bool bol`, `int input`
+    * Example usage:
+      ```cs
+      bool bol1;
+      bool bol2;
+
+      bol1.FromInt(0);
+      bol2.FromInt(1);
+
+      Console.WriteLine(bol1);
+      Console.WriteLine(bol2);
+      ```
+    * Output:
+      ```
+      false
+      true
+      ```
 ### Stone_Red_Utilities.StringExtentions
-#### Methods:
+#### Methods
+
   * EqualsIgnoreCase
     * Description: Determines whether this instance and another specified string object have the same value regardless of upper and lower case.
     * Parameters: `this string str`, `string value`
@@ -186,6 +225,32 @@ https://www.nuget.org/packages/Stone_Red-C-Sharp-Utilities
     * Output:
       ```
       True
+      ```
+  * ToFileName
+    * Description: Determines whether this instance and another specified string object have the same value regardless of upper and lower case and spaces.
+    * Parameters: `this string str`, `string value`
+    * Example usage:
+      ```cs
+      string str = "*n*/ /äme";
+      string fileName = str.ToFileName();
+      Console.WriteLine(fileName);
+      ```
+    * Output:
+      ```
+      name
+      ```
+  * ToPath
+    * Description: Determines whether this instance and another specified string object have the same value regardless of upper and lower case and spaces.
+    * Parameters: `this string str`, `string value`
+    * Example usage:
+      ```cs
+      string str = "C://goöd   /päth";
+      string fileName = str.ToPath();
+      Console.WriteLine(fileName);
+      ```
+    * Output:
+      ```
+      C://good/path
       ```
 ### Stone_Red_Utilities.Logging
 #### Constructor:

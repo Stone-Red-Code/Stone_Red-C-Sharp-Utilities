@@ -77,6 +77,20 @@
             <param name="bol"></param>
             <param name="input"></param>
         </member>
+        <member name="M:Stone_Red_Utilities.BoolExtentions.BoolExt.ToInt(System.Boolean)">
+            <summary>
+            Converts bool to int.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.BoolExtentions.BoolExt.FromInt(System.Boolean@,System.Int32)">
+            <summary>
+            Converts bool to int.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
         <member name="T:Stone_Red_Utilities.ConsoleExtentions.ConsoleExt">
             <summary>
             Console Extentions
@@ -245,7 +259,15 @@
         </member>
         <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.ToFileName(System.String,System.Boolean)">
             <summary>
-            Removes all invalid chars from file name
+            Removes all invalid chars from the specified string
+            </summary>
+            <param name="str"></param>
+            <param name="allowSpaces"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.ToPath(System.String,System.Boolean)">
+            <summary>
+            Removes all invalid chars from the specified string
             </summary>
             <param name="str"></param>
             <param name="allowSpaces"></param>
@@ -266,6 +288,13 @@
             <param name="str"></param>
             <param name="length"></param>
             <param name="ellipsis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.CorrectNewLine(System.String)">
+            <summary>
+            Uses the correct newline string defined for this environment.
+            </summary>
+            <param name="str"></param>
             <returns></returns>
         </member>
     </members>

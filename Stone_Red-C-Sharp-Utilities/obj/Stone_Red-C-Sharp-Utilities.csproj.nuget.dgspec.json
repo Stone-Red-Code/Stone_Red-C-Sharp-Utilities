@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj": {
-      "version": "1.0.1.1",
+      "version": "1.0.1.2",
       "restore": {
         "projectUniqueName": "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj",
         "projectName": "Stone_Red-C-Sharp-Utilities",
@@ -14,10 +14,12 @@
         "outputPath": "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -58,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

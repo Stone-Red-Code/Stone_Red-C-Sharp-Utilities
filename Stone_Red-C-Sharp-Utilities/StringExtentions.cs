@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
-using System.Text.RegularExpressions;
 
 namespace Stone_Red_Utilities.StringExtentions
 {
@@ -47,7 +45,7 @@ namespace Stone_Red_Utilities.StringExtentions
         }
 
         /// <summary>
-        /// Removes all invalid chars from file name
+        /// Removes all invalid chars from the specified string
         /// </summary>
         /// <param name="str"></param>
         /// <param name="allowSpaces"></param>
@@ -55,6 +53,39 @@ namespace Stone_Red_Utilities.StringExtentions
         public static string ToFileName(this string str, bool allowSpaces = false)
         {
             char[] invalidChars = Path.GetInvalidFileNameChars();
+
+            if (!allowSpaces)
+                str = str.Replace(" ", string.Empty);
+
+            foreach (var item in invalidChars)
+            {
+                str = str.Replace(item.ToString(), string.Empty);
+            }
+
+            var normalizedString = str.Normalize(NormalizationForm.FormD);
+            var stringBuilder = new StringBuilder();
+
+            foreach (var c in normalizedString)
+            {
+                var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+                if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+
+            return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
+        }
+
+        /// <summary>
+        /// Removes all invalid chars from the specified string
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="allowSpaces"></param>
+        /// <returns></returns>
+        public static string ToPath(this string str, bool allowSpaces = false)
+        {
+            char[] invalidChars = Path.GetInvalidPathChars();
 
             if (!allowSpaces)
                 str = str.Replace(" ", string.Empty);
@@ -111,6 +142,21 @@ namespace Stone_Red_Utilities.StringExtentions
                 {
                     return str.Substring(0, length);
                 }
+
+            return str;
+        }
+
+        /// <summary>
+        /// Uses the correct newline string defined for this environment.
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public static string CorrectNewLine(this string str)
+        {
+            if (Environment.OSVersion.Platform == PlatformID.Unix)
+                str = str.Replace("\r\n", "\n");
+            else
+                str = str.Replace("\n", "\r\n"); //Ik that this can produce wrong results
 
             return str;
         }
