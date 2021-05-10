@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Stone_Red_C_Sharp_Utilities_Test</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

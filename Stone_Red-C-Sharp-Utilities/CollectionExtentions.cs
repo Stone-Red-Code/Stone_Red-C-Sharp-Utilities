@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 
-namespace Stone_Red_Utilities.ArrListExtentions
+namespace Stone_Red_Utilities.CollectionExtentions
 {
     /// <summary>
     /// Table Style
@@ -31,65 +32,34 @@ namespace Stone_Red_Utilities.ArrListExtentions
     }
 
     /// <summary>
-    /// <see cref="Array"/> and <see cref="List{T}"/> Extentions
+    /// <see cref="IEnumerable{T}"/> and <see cref="Array"/> Extentions
     /// </summary>
-    public static class ArrayListExt
+    public static class CollectionExt
     {
         /// <summary>
-        /// Prints items of array
-        /// </summary>
-        /// <param name="array"></param>
-        /// <param name="delimiter"></param>
-        /// <param name="printToDebugConsole"></param>
-        public static void Print(this Array array, char delimiter = ',', bool printToDebugConsole = false)
-        {
-            int i = 0;
-            string split = delimiter + (delimiter == '\n' ? string.Empty : " ");
-            foreach (var item in array)
-            {
-                if (item is Array arr)
-                {
-                    arr.Print(delimiter, printToDebugConsole);
-                }
-                else if (printToDebugConsole)
-                {
-                    Debug.Write(item.ToString() + (i < array.Length - 1 ? split : string.Empty));
-                }
-                else
-                {
-                    Console.Write(item.ToString() + (i < array.Length - 1 ? split : string.Empty));
-                }
-                i++;
-            }
-        }
-
-        /// <summary>
-        /// Prints items of list
+        /// Prints all items of an <see cref="IEnumerable{T}"/>
         /// </summary>
         /// <param name="list"></param>
         /// <param name="delimiter"></param>
         /// <param name="printToDebugConsole"></param>
-        public static void Print<T>(this List<T> list, char delimiter = ',', bool printToDebugConsole = false)
+        public static void Print<T>(this IEnumerable<T> collection, char delimiter = ',', bool printToDebugConsole = false)
         {
             int i = 0;
+            int length = collection.Count() - 1;
             string split = delimiter + (delimiter == '\n' ? string.Empty : " ");
-            foreach (var item in list)
+            foreach (var item in collection)
             {
-                if (item is Array arr)
+                if (item is IEnumerable<T> ie)
                 {
-                    arr.Print(delimiter, printToDebugConsole);
-                }
-                else if (item is List<T> ls)
-                {
-                    ls.Print(delimiter, printToDebugConsole);
+                    ie.Print(delimiter, printToDebugConsole);
                 }
                 else if (printToDebugConsole)
                 {
-                    Debug.Write(item.ToString() + (i < list.Count - 1 ? split : string.Empty));
+                    Debug.Write(item.ToString() + (i < length - 1 ? split : string.Empty));
                 }
                 else
                 {
-                    Console.Write(item.ToString() + (i < list.Count - 1 ? split : string.Empty));
+                    Console.Write(item.ToString() + (i < length - 1 ? split : string.Empty));
                 }
                 i++;
             }
@@ -115,6 +85,7 @@ namespace Stone_Red_Utilities.ArrListExtentions
             }
 
             PrintLine(tableStyle, itemLength, array.GetLength(1), tableStyle == TableStyle.List);
+
             for (int i = 0; i < array.GetLength(0); i++)
             {
                 for (int j = 0; j < array.GetLength(1); j++)

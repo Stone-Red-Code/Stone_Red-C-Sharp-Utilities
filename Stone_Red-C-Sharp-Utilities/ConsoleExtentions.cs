@@ -3,7 +3,7 @@
 namespace Stone_Red_Utilities.ConsoleExtentions
 {
     /// <summary>
-    /// Console Extentions
+    /// <see cref="Console"/> Extentions
     /// </summary>
     public static class ConsoleExt
     {
@@ -40,7 +40,7 @@ namespace Stone_Red_Utilities.ConsoleExtentions
         }
 
         /// <summary>
-        /// Suspends execution until the user presses a key
+        /// Suspends execution of the current method until the user presses a key
         /// </summary>
         /// <param name="enterKeyOnly"></param>
         /// <param name="customMessage"></param>

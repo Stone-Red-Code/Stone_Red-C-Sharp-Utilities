@@ -12,7 +12,7 @@ namespace Stone_Red_Utilities.StringExtentions
     public static class StringExt
     {
         /// <summary>
-        /// Determines whether this instance and another specified <see cref="String"/> object have the same value regardless of upper and lower case.
+        /// Determines whether this instance and another specified <see cref="string"/> object have the same value regardless of upper and lower case.
         /// </summary>
         /// <param name="value"></param>
         /// <param name="str"></param>
@@ -23,7 +23,7 @@ namespace Stone_Red_Utilities.StringExtentions
         }
 
         /// <summary>
-        /// Determines whether this instance and another specified <see cref="String"/> object have the same value regardless of spaces.
+        /// Determines whether this instance and another specified <see cref="string"/> object have the same value regardless of spaces.
         /// </summary>
         /// <param name="value"></param>
         /// <param name="str"></param>
@@ -34,7 +34,7 @@ namespace Stone_Red_Utilities.StringExtentions
         }
 
         /// <summary>
-        /// Determines whether this instance and another specified <see cref="String"/> object have the same value regardless of upper and lower case and spaces.
+        /// Determines whether this instance and another specified <see cref="string"/> object have the same value regardless of upper and lower case and spaces.
         /// </summary>
         /// <param name="value"></param>
         /// <param name="str"></param>
@@ -45,7 +45,7 @@ namespace Stone_Red_Utilities.StringExtentions
         }
 
         /// <summary>
-        /// Removes all invalid chars from the specified string
+        /// Removes all invalid chars from the specified <see cref="string"/>
         /// </summary>
         /// <param name="str"></param>
         /// <param name="allowSpaces"></param>
@@ -78,7 +78,7 @@ namespace Stone_Red_Utilities.StringExtentions
         }
 
         /// <summary>
-        /// Removes all invalid chars from the specified string
+        /// Removes all invalid chars from the specified <see cref="string"/>
         /// </summary>
         /// <param name="str"></param>
         /// <param name="allowSpaces"></param>
@@ -111,7 +111,7 @@ namespace Stone_Red_Utilities.StringExtentions
         }
 
         /// <summary>
-        /// Truncates a string to the specified length.
+        /// Truncates a <see cref="string"/> to the specified length.
         /// </summary>
         /// <param name="str"></param>
         /// <param name="length"></param>
@@ -125,7 +125,7 @@ namespace Stone_Red_Utilities.StringExtentions
         }
 
         /// <summary>
-        /// Truncates a string to the specified length.
+        /// Truncates a <see cref="string"/> to the specified length.
         /// </summary>
         /// <param name="str"></param>
         /// <param name="length"></param>
@@ -147,7 +147,7 @@ namespace Stone_Red_Utilities.StringExtentions
         }
 
         /// <summary>
-        /// Uses the correct newline string defined for this environment.
+        /// Uses the correct newline <see cref="string"/> defined for this environment.
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
@@ -159,6 +159,34 @@ namespace Stone_Red_Utilities.StringExtentions
                 str = str.Replace("\n", "\r\n"); //Ik that this can produce wrong results
 
             return str;
+        }
+
+        /// <summary>
+        /// Revoves all whitespaces from the specified <see cref="string"/>
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public static string RemoveWhitespaces(this string str)
+        {
+            StringBuilder result = new StringBuilder();
+            foreach (char c in str)
+            {
+                if (!char.IsWhiteSpace(c))
+                    result.Append(c);
+            }
+            return result.ToString();
+        }
+
+        /// <summary>
+        /// Reverses the specified <see cref="string"/>
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public static string Reverse(this string str)
+        {
+            char[] array = str.ToCharArray();
+            Array.Reverse(array);
+            return new string(array);
         }
     }
 }

@@ -4,60 +4,6 @@
         <name>Stone_Red-C-Sharp-Utilities</name>
     </assembly>
     <members>
-        <member name="T:Stone_Red_Utilities.ArrListExtentions.TableStyle">
-            <summary>
-            Table Style
-            </summary>
-        </member>
-        <member name="F:Stone_Red_Utilities.ArrListExtentions.TableStyle.Default">
-            <summary>
-            The default representaion of the table
-            </summary>
-        </member>
-        <member name="F:Stone_Red_Utilities.ArrListExtentions.TableStyle.Minimum">
-            <summary>
-            The minimal representation of the table
-            </summary>
-        </member>
-        <member name="F:Stone_Red_Utilities.ArrListExtentions.TableStyle.Alternative">
-            <summary>
-            The alternative representaion of the table
-            </summary>
-        </member>
-        <member name="F:Stone_Red_Utilities.ArrListExtentions.TableStyle.List">
-            <summary>
-            The list representaion of the table
-            </summary>
-        </member>
-        <member name="T:Stone_Red_Utilities.ArrListExtentions.ArrayListExt">
-            <summary>
-            <see cref="T:System.Array"/> and <see cref="T:System.Collections.Generic.List`1"/> Extentions
-            </summary>
-        </member>
-        <member name="M:Stone_Red_Utilities.ArrListExtentions.ArrayListExt.Print(System.Array,System.Char,System.Boolean)">
-            <summary>
-            Prints items of array
-            </summary>
-            <param name="array"></param>
-            <param name="delimiter"></param>
-            <param name="printToDebugConsole"></param>
-        </member>
-        <member name="M:Stone_Red_Utilities.ArrListExtentions.ArrayListExt.Print``1(System.Collections.Generic.List{``0},System.Char,System.Boolean)">
-            <summary>
-            Prints items of list
-            </summary>
-            <param name="list"></param>
-            <param name="delimiter"></param>
-            <param name="printToDebugConsole"></param>
-        </member>
-        <member name="M:Stone_Red_Utilities.ArrListExtentions.ArrayListExt.PrintTable``1(``0[0:,0:],Stone_Red_Utilities.ArrListExtentions.TableStyle)">
-            <summary>
-            Creates and prints table from 2D array
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="array"></param>
-            <param name="tableStyle"></param>
-        </member>
         <member name="T:Stone_Red_Utilities.BoolExtentions.BoolExt">
             <summary>
             <see cref="T:System.Boolean"/> Extentions
@@ -77,9 +23,69 @@
             <param name="bol"></param>
             <param name="input"></param>
         </member>
+        <member name="M:Stone_Red_Utilities.BoolExtentions.BoolExt.ToInt(System.Boolean)">
+            <summary>
+            Converts bool to int.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.BoolExtentions.BoolExt.FromInt(System.Boolean@,System.Int32)">
+            <summary>
+            Converts int to bool.
+            </summary>
+            <param name="bol"></param>
+            <param name="input"></param>
+        </member>
+        <member name="T:Stone_Red_Utilities.CollectionExtentions.TableStyle">
+            <summary>
+            Table Style
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.CollectionExtentions.TableStyle.Default">
+            <summary>
+            The default representaion of the table
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.CollectionExtentions.TableStyle.Minimum">
+            <summary>
+            The minimal representation of the table
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.CollectionExtentions.TableStyle.Alternative">
+            <summary>
+            The alternative representaion of the table
+            </summary>
+        </member>
+        <member name="F:Stone_Red_Utilities.CollectionExtentions.TableStyle.List">
+            <summary>
+            The list representaion of the table
+            </summary>
+        </member>
+        <member name="T:Stone_Red_Utilities.CollectionExtentions.CollectionExt">
+            <summary>
+            <see cref="T:System.Collections.Generic.IEnumerable`1"/> and <see cref="T:System.Array"/> Extentions
+            </summary>
+        </member>
+        <member name="M:Stone_Red_Utilities.CollectionExtentions.CollectionExt.Print``1(System.Collections.Generic.IEnumerable{``0},System.Char,System.Boolean)">
+            <summary>
+            Prints all items of an <see cref="T:System.Collections.Generic.IEnumerable`1"/>
+            </summary>
+            <param name="list"></param>
+            <param name="delimiter"></param>
+            <param name="printToDebugConsole"></param>
+        </member>
+        <member name="M:Stone_Red_Utilities.CollectionExtentions.CollectionExt.PrintTable``1(``0[0:,0:],Stone_Red_Utilities.CollectionExtentions.TableStyle)">
+            <summary>
+            Creates and prints table from 2D array
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="array"></param>
+            <param name="tableStyle"></param>
+        </member>
         <member name="T:Stone_Red_Utilities.ConsoleExtentions.ConsoleExt">
             <summary>
-            Console Extentions
+            <see cref="T:System.Console"/> Extentions
             </summary>
         </member>
         <member name="M:Stone_Red_Utilities.ConsoleExtentions.ConsoleExt.Write(System.Object,System.ConsoleColor)">
@@ -98,7 +104,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.ConsoleExtentions.ConsoleExt.Pause(System.Boolean,System.String)">
             <summary>
-            Suspends execution until the user presses a key
+            Suspends execution of the current method until the user presses a key
             </summary>
             <param name="enterKeyOnly"></param>
             <param name="customMessage"></param>
@@ -214,6 +220,38 @@
             Clears the log file
             </summary>
         </member>
+        <member name="T:Stone_Red_Utilities.RandomExtentions.RandomExt">
+            <summary>
+            <see cref="T:System.Random"/> Extentions
+            </summary>
+        </member>
+        <member name="M:Stone_Red_Utilities.RandomExtentions.RandomExt.NextItem``1(System.Random,System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Returns an random item from the specified <paramref name="collection"/> using the <see cref="T:System.Random"/> class
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="random"></param>
+            <param name="collection"></param>
+            <returns>Returns a random item from the specified <paramref name="collection"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="collection" /> is <see langword="null" /></exception>
+        </member>
+        <member name="M:Stone_Red_Utilities.RandomExtentions.RandomExt.NextBool(System.Random)">
+            <summary>
+            Returns a random <see cref="T:System.Boolean"/> using the <see cref="T:System.Random" /> class
+            </summary>
+            <param name="random"></param>
+            <returns>Returns <see langword="true" /> or <see langword="false"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="random" /> is <see langword="null" /></exception>
+        </member>
+        <member name="M:Stone_Red_Utilities.RandomExtentions.RandomExt.NextEnum``1(System.Random,``0)">
+            <summary>
+            Returns a random item from the specified <see cref="T:System.Enum"/> using the <see cref="T:System.Random" /> class
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="random"></param>
+            <param name="_"></param>
+            <returns></returns>
+        </member>
         <member name="T:Stone_Red_Utilities.StringExtentions.StringExt">
             <summary>
             <see cref="T:System.String"/> Extentions
@@ -245,7 +283,15 @@
         </member>
         <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.ToFileName(System.String,System.Boolean)">
             <summary>
-            Removes all invalid chars from file name
+            Removes all invalid chars from the specified <see cref="T:System.String"/>
+            </summary>
+            <param name="str"></param>
+            <param name="allowSpaces"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.ToPath(System.String,System.Boolean)">
+            <summary>
+            Removes all invalid chars from the specified <see cref="T:System.String"/>
             </summary>
             <param name="str"></param>
             <param name="allowSpaces"></param>
@@ -253,7 +299,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.Truncate(System.String,System.Int32)">
             <summary>
-            Truncates a string to the specified length.
+            Truncates a <see cref="T:System.String"/> to the specified length.
             </summary>
             <param name="str"></param>
             <param name="length"></param>
@@ -261,11 +307,32 @@
         </member>
         <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.Truncate(System.String,System.Int32,System.Boolean)">
             <summary>
-            Truncates a string to the specified length.
+            Truncates a <see cref="T:System.String"/> to the specified length.
             </summary>
             <param name="str"></param>
             <param name="length"></param>
             <param name="ellipsis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.CorrectNewLine(System.String)">
+            <summary>
+            Uses the correct newline <see cref="T:System.String"/> defined for this environment.
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.RemoveWhitespaces(System.String)">
+            <summary>
+            Revoves all whitespaces from the specified <see cref="T:System.String"/>
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.Reverse(System.String)">
+            <summary>
+            Reverses the specified <see cref="T:System.String"/>
+            </summary>
+            <param name="str"></param>
             <returns></returns>
         </member>
     </members>

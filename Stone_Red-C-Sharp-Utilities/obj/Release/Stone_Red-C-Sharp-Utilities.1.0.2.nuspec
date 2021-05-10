@@ -7,8 +7,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">LICENSE</license>
     <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
-    <description>Adds useful extentions.</description>
-    <tags>Console, Table, Print</tags>
+    <description>Adds useful methods</description>
+    <tags>ExtensionMethods, Methods, Extention, Console, Table, Print, C#</tags>
     <repository url="https://github.com/Stone-Red-Code/Stone_Red-C-Sharp-Utilities" />
     <dependencies>
       <group targetFramework=".NETStandard2.1" />

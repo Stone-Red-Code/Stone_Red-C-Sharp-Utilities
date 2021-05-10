@@ -18,13 +18,13 @@
 
 ## Namespaces
 
-### Stone_Red_Utilities.ArrListExtentions
+### Stone_Red_Utilities.CollectionExtentions
 
 #### Methods
 
-* Print
-  * Description: Prints items of array
-  * Parameters: `this Array array`, `char delimiter`, `bool printToDebugConsole`
+* Print\<T>
+  * Description: Prints items of an IEnumerable\<T>
+  * Parameters: `this IEnumerable<T> collection`, `char delimiter`, `bool printToDebugConsole`
   * Example usage:
 
     ```cs
@@ -36,22 +36,6 @@
 
     ```text
     str1; str2; str3
-    ```
-
-* Print\<T>
-  * Description: Prints items of list
-  * Parameters: `this List<T> list`, `char delimiter`, `bool printToDebugConsole`
-  * Example usage:
-
-    ```cs
-    List<double> yourList = new() { 1.45, 6.24, 4.14 };
-    yourList.Print(';');
-    ```
-
-  * Output:
-
-    ```text
-    1.45; 6.24; 4.14
     ```
 
 * PrintTable\<T>
@@ -318,6 +302,105 @@
 
     ```text
     C://good/path
+    ```
+
+* RemoveWhitespaces
+  * Description: Revoves all whitespaces from the specified string
+  * Parameters: `this string str`
+  * Example usage:
+
+    ```cs
+    string str = "a b c";
+    string result = str.RemoveWhitespaces();
+    Console.WriteLine(result);
+    ```
+
+  * Output:
+
+    ```text
+    abc
+    ```
+
+* Reverse
+  * Description: Reverses the specified string
+  * Parameters: `this string str`
+  * Example usage:
+
+    ```cs
+    string str = "em esrever";
+    Console.WriteLine(str.Reverse());
+    ```
+
+  * Output:
+
+    ```text
+    reverse me
+    ```
+
+### Stone_Red_Utilities.RandomExtentions
+
+#### Methods
+
+* NextItem
+  * Description: Returns an random item from the specified collection using the Random class
+  * Parameters: `this Random random`, `IEnumerable<T> collection`
+  * Example usage:
+
+    ```cs
+    string[] arr = { "test1", "test2", "test3" };
+    Random rnd = new Random();
+    string randomItem = rnd.NextItem(arr);
+    Console.WriteLine(randomItem);
+    ```
+
+  * Output (Will be random every time):
+
+    ```text
+    test2
+    ```
+
+* NextBool
+  * Description: Returns a random bool using the "Random" class
+  * Parameters: `this Random random`, `IEnumerable<T> collection`
+  * Example usage:
+
+    ```cs
+    string[] arr = { "test1", "test2", "test3" };
+    Random rnd = new Random();
+    string randomItem = rnd.NextItem(arr);
+    Console.WriteLine(randomItem);
+    ```
+
+  * Output (Will be random every time):
+
+    ```text
+    test2
+    ```
+
+* NextEnum\<T>
+  * Description: Returns a random bool using the "Random" class
+  * Parameters: `this Random random`, `IEnumerable<T> collection`
+  * Example usage:
+
+    ```cs
+    private enum MyEnum
+    {
+        a,
+        b,
+        c
+    }
+
+    ...
+
+    Random rnd = new Random();
+    MyEnum randomItem = rnd.NextEnum(new MyEnum());
+    Console.WriteLine(randomItem);
+    ```
+
+  * Output (Will be random every time):
+
+    ```text
+    c
     ```
 
 ### Stone_Red_Utilities.Logging

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Stone_Red-C-Sharp-Utilities-Test/1.0.0": {
+        "dependencies": {
+          "Stone_Red-C-Sharp-Utilities": "1.0.2"
+        },
+        "runtime": {
+          "Stone_Red-C-Sharp-Utilities-Test.dll": {}
+        }
+      },
+      "Stone_Red-C-Sharp-Utilities/1.0.2": {
+        "runtime": {
+          "Stone_Red-C-Sharp-Utilities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Stone_Red-C-Sharp-Utilities-Test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stone_Red-C-Sharp-Utilities/1.0.2": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
