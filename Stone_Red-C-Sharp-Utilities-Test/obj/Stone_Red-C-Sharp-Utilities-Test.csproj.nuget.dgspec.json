@@ -64,12 +64,12 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
     "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj": {
-      "version": "1.0.2",
+      "version": "1.0.2.1",
       "restore": {
         "projectUniqueName": "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj",
         "projectName": "Stone_Red-C-Sharp-Utilities",
@@ -124,7 +124,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

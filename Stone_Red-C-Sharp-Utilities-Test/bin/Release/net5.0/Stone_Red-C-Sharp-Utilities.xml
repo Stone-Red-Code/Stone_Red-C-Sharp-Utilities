@@ -71,7 +71,7 @@
             <summary>
             Prints all items of an <see cref="T:System.Collections.Generic.IEnumerable`1"/>
             </summary>
-            <param name="list"></param>
+            <param name="collection"></param>
             <param name="delimiter"></param>
             <param name="printToDebugConsole"></param>
         </member>

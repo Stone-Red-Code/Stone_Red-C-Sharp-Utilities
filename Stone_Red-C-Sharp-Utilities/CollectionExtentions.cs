@@ -39,7 +39,7 @@ namespace Stone_Red_Utilities.CollectionExtentions
         /// <summary>
         /// Prints all items of an <see cref="IEnumerable{T}"/>
         /// </summary>
-        /// <param name="list"></param>
+        /// <param name="collection"></param>
         /// <param name="delimiter"></param>
         /// <param name="printToDebugConsole"></param>
         public static void Print<T>(this IEnumerable<T> collection, char delimiter = ',', bool printToDebugConsole = false)
@@ -55,11 +55,11 @@ namespace Stone_Red_Utilities.CollectionExtentions
                 }
                 else if (printToDebugConsole)
                 {
-                    Debug.Write(item.ToString() + (i < length - 1 ? split : string.Empty));
+                    Debug.Write(item.ToString() + (i < length ? split : string.Empty));
                 }
                 else
                 {
-                    Console.Write(item.ToString() + (i < length - 1 ? split : string.Empty));
+                    Console.Write(item.ToString() + (i < length ? split : string.Empty));
                 }
                 i++;
             }

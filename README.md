@@ -3,6 +3,7 @@
 > Provides useful C# methods.
 
 ## Wiki
+
 * [Home](https://github.com/Stone-Red-Code/Stone_Red-C-Sharp-Utilities/wiki/Home)
 * [Install](https://github.com/Stone-Red-Code/Stone_Red-C-Sharp-Utilities/wiki/Install)
 * Features
