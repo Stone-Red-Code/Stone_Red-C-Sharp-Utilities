@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Globalization;
 using System.IO;
-using System.Runtime.InteropServices;
 using System.Text;
 
 namespace Stone_Red_Utilities.StringExtentions
@@ -55,19 +54,21 @@ namespace Stone_Red_Utilities.StringExtentions
             char[] invalidChars = Path.GetInvalidFileNameChars();
 
             if (!allowSpaces)
+            {
                 str = str.Replace(" ", string.Empty);
+            }
 
-            foreach (var item in invalidChars)
+            foreach (char item in invalidChars)
             {
                 str = str.Replace(item.ToString(), string.Empty);
             }
 
-            var normalizedString = str.Normalize(NormalizationForm.FormD);
-            var stringBuilder = new StringBuilder();
+            string normalizedString = str.Normalize(NormalizationForm.FormD);
+            StringBuilder stringBuilder = new StringBuilder();
 
-            foreach (var c in normalizedString)
+            foreach (char c in normalizedString)
             {
-                var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+                UnicodeCategory unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
                 if (unicodeCategory != UnicodeCategory.NonSpacingMark)
                 {
                     stringBuilder.Append(c);
@@ -88,19 +89,21 @@ namespace Stone_Red_Utilities.StringExtentions
             char[] invalidChars = Path.GetInvalidPathChars();
 
             if (!allowSpaces)
+            {
                 str = str.Replace(" ", string.Empty);
+            }
 
-            foreach (var item in invalidChars)
+            foreach (char item in invalidChars)
             {
                 str = str.Replace(item.ToString(), string.Empty);
             }
 
-            var normalizedString = str.Normalize(NormalizationForm.FormD);
-            var stringBuilder = new StringBuilder();
+            string normalizedString = str.Normalize(NormalizationForm.FormD);
+            StringBuilder stringBuilder = new StringBuilder();
 
-            foreach (var c in normalizedString)
+            foreach (char c in normalizedString)
             {
-                var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+                UnicodeCategory unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
                 if (unicodeCategory != UnicodeCategory.NonSpacingMark)
                 {
                     stringBuilder.Append(c);
@@ -119,7 +122,9 @@ namespace Stone_Red_Utilities.StringExtentions
         public static string Truncate(this string str, int length)
         {
             if (str.Length > length && length > 0)
+            {
                 return str.Substring(0, length);
+            }
 
             return str;
         }
@@ -134,6 +139,7 @@ namespace Stone_Red_Utilities.StringExtentions
         public static string Truncate(this string str, int length, bool ellipsis)
         {
             if (str.Length > length && length > 0)
+            {
                 if (ellipsis)
                 {
                     return $"{str.Substring(0, length - 3)}...";
@@ -142,6 +148,7 @@ namespace Stone_Red_Utilities.StringExtentions
                 {
                     return str.Substring(0, length);
                 }
+            }
 
             return str;
         }
@@ -154,9 +161,13 @@ namespace Stone_Red_Utilities.StringExtentions
         public static string CorrectNewLine(this string str)
         {
             if (Environment.OSVersion.Platform == PlatformID.Unix)
+            {
                 str = str.Replace("\r\n", "\n");
+            }
             else
+            {
                 str = str.Replace("\n", "\r\n"); //Ik that this can produce wrong results
+            }
 
             return str;
         }
@@ -172,7 +183,9 @@ namespace Stone_Red_Utilities.StringExtentions
             foreach (char c in str)
             {
                 if (!char.IsWhiteSpace(c))
+                {
                     result.Append(c);
+                }
             }
             return result.ToString();
         }

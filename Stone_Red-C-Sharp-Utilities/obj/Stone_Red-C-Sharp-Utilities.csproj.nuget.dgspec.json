@@ -1,33 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj": {}
+    "C:\\Users\\David\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj": {
-      "version": "1.0.2.1",
+    "C:\\Users\\David\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj": {
+      "version": "1.0.3.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj",
+        "projectUniqueName": "C:\\Users\\David\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj",
         "projectName": "Stone_Red-C-Sharp-Utilities",
-        "projectPath": "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj",
+        "projectPath": "C:\\Users\\David\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj",
         "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\obj\\",
+        "outputPath": "C:\\Users\\David\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\David\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,6 +44,14 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Vsxmd": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.4.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -60,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -44,9 +44,8 @@ namespace Stone_Red_Utilities.RandomExtentions
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="random"></param>
-        /// <param name="_"></param>
         /// <returns></returns>
-        public static T NextEnum<T>(this Random random, T _) where T : Enum //Not the best solution but it works
+        public static T NextEnum<T>(this Random random) where T : Enum //Not the best solution but it works
         {
             Array arr = Enum.GetValues(typeof(T));
             return (T)arr.GetValue(random.Next(arr.Length));

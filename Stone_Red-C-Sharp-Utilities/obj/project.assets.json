@@ -1,41 +1,68 @@
 {
   "version": 3,
   "targets": {
-    ".NETStandard,Version=v2.1": {}
+    ".NETStandard,Version=v2.1": {
+      "Vsxmd/1.4.5": {
+        "type": "package",
+        "build": {
+          "build/Vsxmd.targets": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Vsxmd/1.4.5": {
+      "sha512": "mvTZKIhKUFvcjYv/p9dxgSFHrAlNFIemT3ai1XAFV4yJYGu/6e73NgzfHwhDi0QevuYURVdd+p088CG6KQFENg==",
+      "type": "package",
+      "path": "vsxmd/1.4.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/Vsxmd.targets",
+        "tools/linux-musl-x64/Vsxmd",
+        "tools/linux-x64/Vsxmd",
+        "tools/osx-x64/Vsxmd",
+        "tools/win-x64/Vsxmd.exe",
+        "tools/win-x86/Vsxmd.exe",
+        "vsxmd.1.4.5.nupkg.sha512",
+        "vsxmd.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": []
+    ".NETStandard,Version=v2.1": [
+      "Vsxmd >= 1.4.5"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\David\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.2.1",
+    "version": "1.0.3.1",
     "restore": {
-      "projectUniqueName": "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj",
+      "projectUniqueName": "C:\\Users\\David\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj",
       "projectName": "Stone_Red-C-Sharp-Utilities",
-      "projectPath": "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj",
+      "projectPath": "C:\\Users\\David\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj",
       "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\obj\\",
+      "outputPath": "C:\\Users\\David\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\David\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -53,6 +80,14 @@
     "frameworks": {
       "netstandard2.1": {
         "targetAlias": "netstandard2.1",
+        "dependencies": {
+          "Vsxmd": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.4.5, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -68,7 +103,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

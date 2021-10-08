@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "p4c3IZ9yAUJ67kieuETabF5CDiZOQrx5HZrwcxLn1ewQ4upa2wfnGjETbLHe0eiwv/Y/p0wbkqpAYMCLl3qfWA==",
+  "dgSpecHash": "szJPtVin5IzkXVU9ObH6EXYb2PHQ5ZOfTN/fz6Vsz068SnBXJvLOMYWPHTw47eLiq1vQxy3andOX2PcxdtU8Uw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\David\\Google Drive\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\David\\Programmieren\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities\\Stone_Red-C-Sharp-Utilities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\David\\.nuget\\packages\\vsxmd\\1.4.5\\vsxmd.1.4.5.nupkg.sha512"
+  ],
   "logs": []
 }

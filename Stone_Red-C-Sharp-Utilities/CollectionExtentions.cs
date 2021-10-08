@@ -47,7 +47,7 @@ namespace Stone_Red_Utilities.CollectionExtentions
             int i = 0;
             int length = collection.Count() - 1;
             string split = delimiter + (delimiter == '\n' ? string.Empty : " ");
-            foreach (var item in collection)
+            foreach (T item in collection)
             {
                 if (item is IEnumerable<T> ie)
                 {
@@ -109,9 +109,14 @@ namespace Stone_Red_Utilities.CollectionExtentions
             if (tableStyle == TableStyle.Minimum || tableStyle == TableStyle.List)
             {
                 if (tableStyle == TableStyle.List && forcePrint)
+                {
                     Console.Write(intersect);
+                }
+
                 if (!forcePrint)
+                {
                     return;
+                }
             }
             else
             {

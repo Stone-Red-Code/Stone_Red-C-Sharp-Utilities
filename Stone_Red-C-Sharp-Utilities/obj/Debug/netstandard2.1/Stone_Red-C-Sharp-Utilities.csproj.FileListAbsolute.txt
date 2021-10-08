@@ -8,3 +8,14 @@ C:\Users\David\Google Drive\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-
 C:\Users\David\Google Drive\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.pdb
 C:\Users\David\Google Drive\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\bin\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.xml
 C:\Users\David\Google Drive\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.csprojAssemblyReference.cache
+C:\Users\David\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\bin\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.deps.json
+C:\Users\David\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\bin\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.dll
+C:\Users\David\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\bin\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.pdb
+C:\Users\David\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\bin\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.xml
+C:\Users\David\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.AssemblyInfoInputs.cache
+C:\Users\David\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.AssemblyInfo.cs
+C:\Users\David\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.csproj.CoreCompileInputs.cache
+C:\Users\David\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.dll
+C:\Users\David\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.pdb
+C:\Users\David\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.1\Stone_Red-C-Sharp-Utilities.csproj.AssemblyReference.cache

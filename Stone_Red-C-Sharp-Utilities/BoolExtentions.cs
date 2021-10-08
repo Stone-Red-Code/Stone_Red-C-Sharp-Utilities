@@ -13,7 +13,9 @@
         public static void OneWayTrue(this ref bool bol, bool input)
         {
             if (bol == false && input)
+            {
                 bol = true;
+            }
         }
 
         /// <summary>
@@ -24,7 +26,9 @@
         public static void OneWayFalse(this ref bool bol, bool input)
         {
             if (bol == true && !input)
+            {
                 bol = false;
+            }
         }
 
         /// <summary>

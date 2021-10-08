@@ -7,18 +7,29 @@
   "targets": {
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
-      "Stone_Red-C-Sharp-Utilities/1.0.2.0": {
+      "Stone_Red-C-Sharp-Utilities/1.0.3.0": {
+        "dependencies": {
+          "Vsxmd": "1.4.5"
+        },
         "runtime": {
           "Stone_Red-C-Sharp-Utilities.dll": {}
         }
-      }
+      },
+      "Vsxmd/1.4.5": {}
     }
   },
   "libraries": {
-    "Stone_Red-C-Sharp-Utilities/1.0.2.0": {
+    "Stone_Red-C-Sharp-Utilities/1.0.3.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Vsxmd/1.4.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mvTZKIhKUFvcjYv/p9dxgSFHrAlNFIemT3ai1XAFV4yJYGu/6e73NgzfHwhDi0QevuYURVdd+p088CG6KQFENg==",
+      "path": "vsxmd/1.4.5",
+      "hashPath": "vsxmd.1.4.5.nupkg.sha512"
     }
   }
 }

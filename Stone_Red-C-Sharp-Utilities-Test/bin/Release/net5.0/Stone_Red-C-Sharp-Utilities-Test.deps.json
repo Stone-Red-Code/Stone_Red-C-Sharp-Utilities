@@ -8,13 +8,13 @@
     ".NETCoreApp,Version=v5.0": {
       "Stone_Red-C-Sharp-Utilities-Test/1.0.0": {
         "dependencies": {
-          "Stone_Red-C-Sharp-Utilities": "1.0.2.1"
+          "Stone_Red-C-Sharp-Utilities": "1.0.3.1"
         },
         "runtime": {
           "Stone_Red-C-Sharp-Utilities-Test.dll": {}
         }
       },
-      "Stone_Red-C-Sharp-Utilities/1.0.2.1": {
+      "Stone_Red-C-Sharp-Utilities/1.0.3.1": {
         "runtime": {
           "Stone_Red-C-Sharp-Utilities.dll": {}
         }
@@ -27,7 +27,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Stone_Red-C-Sharp-Utilities/1.0.2.1": {
+    "Stone_Red-C-Sharp-Utilities/1.0.3.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
