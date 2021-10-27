@@ -20,7 +20,7 @@ namespace Stone_Red_Utilities.FluentMath.Shapes
         /// <summary>
         /// The diagonal of the <see cref="Rectangle"/>
         /// </summary>
-        public double Diagonal => System.Math.Sqrt(Math.Pow(Length, 2) + Math.Pow(Width, 2));
+        public double Diagonal => Math.Sqrt(Math.Pow(Length, 2) + Math.Pow(Width, 2));
 
         /// <summary>
         /// The area of the <see cref="Rectangle"/>
@@ -35,8 +35,8 @@ namespace Stone_Red_Utilities.FluentMath.Shapes
         /// <summary>
         /// Creates a new rectangle instance
         /// </summary>
-        /// <param name="length"></param>
-        /// <param name="width"></param>
+        /// <param name="length">The length of the rectangle</param>
+        /// <param name="width">The width of the rectangle</param>
         public Rectangle(double length, double width)
         {
             Length = length;

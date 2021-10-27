@@ -44,7 +44,7 @@ namespace Stone_Red_Utilities.Logging
     public class OutputConfig
     {
         /// <summary>
-        /// The onsole color of the log message.
+        /// The console color of the log message.
         /// </summary>
         public ConsoleColor Color { get; set; } = ConsoleColor.White;
 
@@ -60,7 +60,7 @@ namespace Stone_Red_Utilities.Logging
     }
 
     /// <summary>
-    /// Foramt configuration.
+    /// Format configuration.
     /// </summary>
     public class FormatConfig
     {

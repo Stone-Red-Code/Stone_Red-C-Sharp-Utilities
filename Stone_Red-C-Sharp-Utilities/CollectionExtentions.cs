@@ -11,7 +11,7 @@ namespace Stone_Red_Utilities.CollectionExtentions
     public enum TableStyle
     {
         /// <summary>
-        /// The default representaion of the table
+        /// The default representation of the table
         /// </summary>
         Default,
 
@@ -21,18 +21,18 @@ namespace Stone_Red_Utilities.CollectionExtentions
         Minimum,
 
         /// <summary>
-        /// The alternative representaion of the table
+        /// The alternative representation of the table
         /// </summary>
         Alternative,
 
         /// <summary>
-        /// The list representaion of the table
+        /// The list representation of the table
         /// </summary>
         List
     }
 
     /// <summary>
-    /// <see cref="IEnumerable{T}"/> and <see cref="Array"/> Extentions
+    /// <see cref="IEnumerable{T}"/> and <see cref="Array"/> Extensions
     /// </summary>
     public static class CollectionExt
     {

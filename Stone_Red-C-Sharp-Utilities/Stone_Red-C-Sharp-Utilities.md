@@ -492,7 +492,7 @@ This method has no parameters.
 
 ##### Summary
 
-Multiplys the two nums
+Multiples the two nums
 
 ##### Returns
 
@@ -935,7 +935,7 @@ This method has no parameters.
 
 ##### Summary
 
-Multiplys the two nums
+Multiples the two nums
 
 ##### Returns
 
@@ -1289,7 +1289,7 @@ Divides the two nums
 
 ##### Summary
 
-Multiplys the two nums
+Multiples the two nums
 
 ##### Returns
 
@@ -1490,7 +1490,7 @@ Divides the two nums
 
 ##### Summary
 
-Multiplys the two nums
+Multiples the two nums
 
 ##### Returns
 
@@ -1691,7 +1691,7 @@ Divides the two nums
 
 ##### Summary
 
-Multiplys the two nums
+Multiples the two nums
 
 ##### Returns
 
@@ -2608,7 +2608,7 @@ This method has no parameters.
 
 ##### Summary
 
-Multiplys the two nums
+Multiples the two nums
 
 ##### Returns
 

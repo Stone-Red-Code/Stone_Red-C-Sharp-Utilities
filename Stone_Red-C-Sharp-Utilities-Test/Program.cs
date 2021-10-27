@@ -1,10 +1,11 @@
-﻿using Stone_Red_Utilities.BoolExtentions;
-using Stone_Red_Utilities.ConsoleExtentions;
-using Stone_Red_Utilities.FluentMath;
+﻿using Stone_Red_Utilities.Http;
 using Stone_Red_Utilities.Logging;
+using Stone_Red_Utilities.Reflection;
 
 using System;
-using System.Diagnostics;
+using System.Net.Http;
+using System.Text.Json.Serialization;
+using System.Threading.Tasks;
 
 namespace Stone_Red_C_Sharp_Utilities_Test
 {
@@ -46,38 +47,31 @@ namespace Stone_Red_C_Sharp_Utilities_Test
             }
         };
 
-        private static void Main()
+        private static async Task Main()
         {
-            Trace.WriteLine("kek1");
-            Debug.WriteLine("kek2");
-            AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
+            HttpClient httpClient = new HttpClient();
+            Quote quote = await httpClient.GetJsonObjectAsync<Quote>("https://api.quotable.io/random");
+            Console.WriteLine(quote.Id);
+            Console.WriteLine(quote.Content);
+            Console.WriteLine(quote.Author);
 
-            while (true)
-            {
-                ConsoleExt.Write("Enter the first  number: ", ConsoleColor.Green);
-                bool success = int.TryParse(Console.ReadLine(), out int num1);
+            Quote q = quote.CopyProperties<Quote>();
 
-                ConsoleExt.Write("Enter the second number: ", ConsoleColor.Green);
-                success.OneWayFalse(int.TryParse(Console.ReadLine(), out int num2));
-
-                logger.LogIf(success, "Valid input!", LogSeverity.Debug);
-
-                if (success)
-                {
-                    Console.WriteLine($"{num1}/{num2} = {num1.Divide(num2)}");
-                }
-                else
-                {
-                    logger.Log("Invalid input!", "Calculator", LogSeverity.Warn);
-                }
-            }
+            Console.WriteLine(q.Id);
+            Console.WriteLine(q.Content);
+            Console.WriteLine(q.Author);
         }
 
-        private static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+        private class Quote
         {
-            Exception exception = (Exception)e.ExceptionObject;
+            [JsonPropertyName("_id")]
+            public string Id { get; set; }
 
-            logger.Log(exception + (e.IsTerminating ? "\t Process terminating!" : ""), exception.Source, LogSeverity.Fatal);
+            [JsonPropertyName("content")]
+            public string Content { get; set; }
+
+            [JsonPropertyName("author")]
+            public string Author { get; set; }
         }
     }
 }

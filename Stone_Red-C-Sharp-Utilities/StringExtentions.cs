@@ -6,7 +6,7 @@ using System.Text;
 namespace Stone_Red_Utilities.StringExtentions
 {
     /// <summary>
-    /// <see cref="string"/> Extentions
+    /// <see cref="string"/> Extensions
     /// </summary>
     public static class StringExt
     {
@@ -140,7 +140,7 @@ namespace Stone_Red_Utilities.StringExtentions
         {
             if (str.Length > length && length > 0)
             {
-                if (ellipsis)
+                if (ellipsis && length > 3)
                 {
                     return $"{str.Substring(0, length - 3)}...";
                 }
@@ -173,7 +173,7 @@ namespace Stone_Red_Utilities.StringExtentions
         }
 
         /// <summary>
-        /// Revoves all whitespaces from the specified <see cref="string"/>
+        /// Removes all white spaces from the specified <see cref="string"/>
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>

@@ -5,7 +5,7 @@ using System.Linq;
 namespace Stone_Red_Utilities.RandomExtentions
 {
     /// <summary>
-    /// <see cref="Random"/> Extentions
+    /// <see cref="Random"/> Extensions
     /// </summary>
     public static class RandomExt
     {

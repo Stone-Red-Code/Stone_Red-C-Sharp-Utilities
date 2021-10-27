@@ -1,7 +1,7 @@
 ﻿namespace Stone_Red_Utilities.BoolExtentions
 {
     /// <summary>
-    /// <see cref="bool"/> Extentions
+    /// <see cref="bool"/> Extensions
     /// </summary>
     public static class BoolExt
     {

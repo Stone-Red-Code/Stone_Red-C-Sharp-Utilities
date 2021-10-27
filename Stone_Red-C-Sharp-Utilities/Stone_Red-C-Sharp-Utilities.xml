@@ -6,7 +6,7 @@
     <members>
         <member name="T:Stone_Red_Utilities.BoolExtentions.BoolExt">
             <summary>
-            <see cref="T:System.Boolean"/> Extentions
+            <see cref="T:System.Boolean"/> Extensions
             </summary>
         </member>
         <member name="M:Stone_Red_Utilities.BoolExtentions.BoolExt.OneWayTrue(System.Boolean@,System.Boolean)">
@@ -44,7 +44,7 @@
         </member>
         <member name="F:Stone_Red_Utilities.CollectionExtentions.TableStyle.Default">
             <summary>
-            The default representaion of the table
+            The default representation of the table
             </summary>
         </member>
         <member name="F:Stone_Red_Utilities.CollectionExtentions.TableStyle.Minimum">
@@ -54,17 +54,17 @@
         </member>
         <member name="F:Stone_Red_Utilities.CollectionExtentions.TableStyle.Alternative">
             <summary>
-            The alternative representaion of the table
+            The alternative representation of the table
             </summary>
         </member>
         <member name="F:Stone_Red_Utilities.CollectionExtentions.TableStyle.List">
             <summary>
-            The list representaion of the table
+            The list representation of the table
             </summary>
         </member>
         <member name="T:Stone_Red_Utilities.CollectionExtentions.CollectionExt">
             <summary>
-            <see cref="T:System.Collections.Generic.IEnumerable`1"/> and <see cref="T:System.Array"/> Extentions
+            <see cref="T:System.Collections.Generic.IEnumerable`1"/> and <see cref="T:System.Array"/> Extensions
             </summary>
         </member>
         <member name="M:Stone_Red_Utilities.CollectionExtentions.CollectionExt.Print``1(System.Collections.Generic.IEnumerable{``0},System.Char,System.Boolean)">
@@ -85,7 +85,7 @@
         </member>
         <member name="T:Stone_Red_Utilities.ConsoleExtentions.ConsoleExt">
             <summary>
-            <see cref="T:System.Console"/> Extentions
+            <see cref="T:System.Console"/> Extensions
             </summary>
         </member>
         <member name="M:Stone_Red_Utilities.ConsoleExtentions.ConsoleExt.Write(System.Object,System.ConsoleColor)">
@@ -204,7 +204,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.FluentMath.DecimalFluent.Multiply(System.Decimal,System.Decimal)">
             <summary>
-            Multiplys the two nums
+            Multiples the two nums
             </summary>
             <param name="num"></param>
             <param name="value"></param>
@@ -306,7 +306,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.FluentMath.DoubleFluent.Multiply(System.Double,System.Double)">
             <summary>
-            Multiplys the two nums
+            Multiples the two nums
             </summary>
             <param name="num"></param>
             <param name="value"></param>
@@ -471,7 +471,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.FluentMath.Int16Fluent.Multiply(System.Int16,System.Int16)">
             <summary>
-            Multiplys the two nums
+            Multiples the two nums
             </summary>
             <param name="num"></param>
             <param name="value"></param>
@@ -552,7 +552,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.FluentMath.Int32Fluent.Multiply(System.Int32,System.Int32)">
             <summary>
-            Multiplys the two nums
+            Multiples the two nums
             </summary>
             <param name="num"></param>
             <param name="value"></param>
@@ -633,7 +633,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.FluentMath.Int64Fluent.Multiply(System.Int64,System.Int64)">
             <summary>
-            Multiplys the two nums
+            Multiples the two nums
             </summary>
             <param name="num"></param>
             <param name="value"></param>
@@ -714,7 +714,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.FluentMath.SingleFluent.Multiply(System.Single,System.Single)">
             <summary>
-            Multiplys the two nums
+            Multiples the two nums
             </summary>
             <param name="num"></param>
             <param name="value"></param>
@@ -863,7 +863,7 @@
         </member>
         <member name="P:Stone_Red_Utilities.Logging.OutputConfig.Color">
             <summary>
-            The onsole color of the log message.
+            The console color of the log message.
             </summary>
         </member>
         <member name="P:Stone_Red_Utilities.Logging.OutputConfig.LogTarget">
@@ -878,7 +878,7 @@
         </member>
         <member name="T:Stone_Red_Utilities.Logging.FormatConfig">
             <summary>
-            Foramt configuration.
+            Format configuration.
             </summary>
         </member>
         <member name="P:Stone_Red_Utilities.Logging.FormatConfig.DebugConsoleFormat">
@@ -1047,7 +1047,7 @@
         </member>
         <member name="T:Stone_Red_Utilities.RandomExtentions.RandomExt">
             <summary>
-            <see cref="T:System.Random"/> Extentions
+            <see cref="T:System.Random"/> Extensions
             </summary>
         </member>
         <member name="M:Stone_Red_Utilities.RandomExtentions.RandomExt.NextItem``1(System.Random,System.Collections.Generic.IEnumerable{``0})">
@@ -1100,7 +1100,7 @@
         </member>
         <member name="T:Stone_Red_Utilities.StringExtentions.StringExt">
             <summary>
-            <see cref="T:System.String"/> Extentions
+            <see cref="T:System.String"/> Extensions
             </summary>
         </member>
         <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.EqualsIgnoreCase(System.String,System.String)">
@@ -1169,7 +1169,7 @@
         </member>
         <member name="M:Stone_Red_Utilities.StringExtentions.StringExt.RemoveWhitespaces(System.String)">
             <summary>
-            Revoves all whitespaces from the specified <see cref="T:System.String"/>
+            Removes all white spaces from the specified <see cref="T:System.String"/>
             </summary>
             <param name="str"></param>
             <returns></returns>

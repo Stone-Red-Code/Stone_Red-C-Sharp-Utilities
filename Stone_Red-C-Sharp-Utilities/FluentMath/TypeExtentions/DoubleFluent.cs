@@ -80,7 +80,7 @@ namespace Stone_Red_Utilities.FluentMath
         }
 
         /// <summary>
-        /// Multiplys the two nums
+        /// Multiples the two nums
         /// </summary>
         /// <param name="num"></param>
         /// <param name="value"></param>
