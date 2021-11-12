@@ -1,9 +1,0 @@
-C:\Users\Schule\Documents\POS\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\bin\Debug\netstandard2.0\Stone_Red-C-Sharp-Utilities.deps.json
-C:\Users\Schule\Documents\POS\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\bin\Debug\netstandard2.0\Stone_Red-C-Sharp-Utilities.dll
-C:\Users\Schule\Documents\POS\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\bin\Debug\netstandard2.0\Stone_Red-C-Sharp-Utilities.pdb
-C:\Users\Schule\Documents\POS\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.0\Stone_Red-C-Sharp-Utilities.csprojAssemblyReference.cache
-C:\Users\Schule\Documents\POS\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.0\Stone_Red-C-Sharp-Utilities.AssemblyInfoInputs.cache
-C:\Users\Schule\Documents\POS\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.0\Stone_Red-C-Sharp-Utilities.AssemblyInfo.cs
-C:\Users\Schule\Documents\POS\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.0\Stone_Red-C-Sharp-Utilities.csproj.CoreCompileInputs.cache
-C:\Users\Schule\Documents\POS\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.0\Stone_Red-C-Sharp-Utilities.dll
-C:\Users\Schule\Documents\POS\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\obj\Debug\netstandard2.0\Stone_Red-C-Sharp-Utilities.pdb

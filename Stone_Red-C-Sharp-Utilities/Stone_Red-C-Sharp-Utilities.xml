@@ -102,12 +102,18 @@
             <param name="value"></param>
             <param name="color"></param>
         </member>
-        <member name="M:Stone_Red_Utilities.ConsoleExtentions.ConsoleExt.Pause(System.Boolean,System.String)">
+        <member name="M:Stone_Red_Utilities.ConsoleExtentions.ConsoleExt.Pause(System.ConsoleKey,System.String)">
             <summary>
             Suspends execution of the current method until the user presses a key
             </summary>
-            <param name="enterKeyOnly"></param>
-            <param name="customMessage"></param>
+            <param name="key">The key that has to be pressed</param>
+            <param name="message">The message that will be displayed</param>
+        </member>
+        <member name="M:Stone_Red_Utilities.ConsoleExtentions.ConsoleExt.Pause(System.String)">
+            <summary>
+            Suspends execution of the current method until the user presses a key
+            </summary>
+            <param name="message">The message that will be displayed</param>
         </member>
         <member name="T:Stone_Red_Utilities.FluentMath.Shapes.Rectangle">
             <summary>
@@ -143,8 +149,8 @@
             <summary>
             Creates a new rectangle instance
             </summary>
-            <param name="length"></param>
-            <param name="width"></param>
+            <param name="length">The length of the rectangle</param>
+            <param name="width">The width of the rectangle</param>
         </member>
         <member name="T:Stone_Red_Utilities.FluentMath.DecimalFluent">
             <summary>
@@ -820,6 +826,29 @@
         </member>
         <member name="M:Stone_Red_Utilities.FluentMath.SingleFluent.Truncate(System.Single)">
             <inheritdoc cref="M:System.MathF.Truncate(System.Single)"/>
+        </member>
+        <member name="T:Stone_Red_Utilities.Http.HttpClientExtentions">
+            <summary>
+            Extensions for <see cref="T:System.Net.Http.HttpClient"/>
+            </summary>
+        </member>
+        <member name="M:Stone_Red_Utilities.Http.HttpClientExtentions.GetJsonObjectAsync``1(System.Net.Http.HttpClient,System.String)">
+            <summary>
+            Reads the JSON returned from the website and converts it into an object
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="httpClient"></param>
+            <param name="requestUri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Stone_Red_Utilities.Http.HttpClientExtentions.GetJsonObjectAsync``1(System.Net.Http.HttpClient,System.Uri)">
+            <summary>
+            Reads the JSON returned from the website and converts it into an object
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="httpClient"></param>
+            <param name="requestUri"></param>
+            <returns></returns>
         </member>
         <member name="T:Stone_Red_Utilities.Logging.LogConfig">
             <summary>

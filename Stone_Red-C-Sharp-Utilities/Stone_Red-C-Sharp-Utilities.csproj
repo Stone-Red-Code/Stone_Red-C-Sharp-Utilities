@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <RootNamespace>Stone_Red_C_Sharp_Utilities</RootNamespace>
     <Authors>Stone_Red</Authors>
-    <PackageTags>ExtensionMethods, Methods, Extention, Console, Table, Print, C#</PackageTags>
+    <PackageTags>ExtensionMethods, Methods, Extension, Console, Table, Print, C#</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Adds useful methods</Description>
     <PackageProjectUrl></PackageProjectUrl>
@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>C:\Users\David\Google Drive\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\David\Programmieren\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
