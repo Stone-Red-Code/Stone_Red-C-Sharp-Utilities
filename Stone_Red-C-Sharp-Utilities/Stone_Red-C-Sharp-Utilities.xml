@@ -837,8 +837,8 @@
             Reads the JSON returned from the website and converts it into an object
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="httpClient"></param>
-            <param name="requestUri"></param>
+            <param name="httpClient">The http client used for the request</param>
+            <param name="requestUri">The Uri the request is sent to/></param>
             <returns></returns>
         </member>
         <member name="M:Stone_Red_Utilities.Http.HttpClientExtentions.GetJsonObjectAsync``1(System.Net.Http.HttpClient,System.Uri)">
@@ -846,8 +846,8 @@
             Reads the JSON returned from the website and converts it into an object
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="httpClient"></param>
-            <param name="requestUri"></param>
+            <param name="httpClient">The http client used for the request</param>
+            <param name="requestUri">The Uri the request is sent to/></param>
             <returns></returns>
         </member>
         <member name="T:Stone_Red_Utilities.Logging.LogConfig">

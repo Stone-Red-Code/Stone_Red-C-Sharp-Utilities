@@ -14,8 +14,8 @@ namespace Stone_Red_Utilities.Http
         /// Reads the JSON returned from the website and converts it into an object
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="httpClient"></param>
-        /// <param name="requestUri"></param>
+        /// <param name="httpClient">The http client used for the request</param>
+        /// <param name="requestUri">The Uri the request is sent to/></param>
         /// <returns></returns>
         public static async Task<T> GetJsonObjectAsync<T>(this HttpClient httpClient, string requestUri)
         {
@@ -26,8 +26,8 @@ namespace Stone_Red_Utilities.Http
         /// Reads the JSON returned from the website and converts it into an object
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="httpClient"></param>
-        /// <param name="requestUri"></param>
+        /// <param name="httpClient">The http client used for the request</param>
+        /// <param name="requestUri">The Uri the request is sent to/></param>
         /// <returns></returns>
         public static async Task<T> GetJsonObjectAsync<T>(this HttpClient httpClient, Uri requestUri)
         {
