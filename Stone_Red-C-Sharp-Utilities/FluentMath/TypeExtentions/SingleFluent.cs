@@ -24,7 +24,7 @@ namespace Stone_Red_Utilities.FluentMath
         /// <returns>Number as <see cref="double"/></returns>
         public static double ToDouble(this float num)
         {
-            return (float)num;
+            return num;
         }
 
         /// <summary>

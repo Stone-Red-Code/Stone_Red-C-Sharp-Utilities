@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Stone_Red_C_Sharp_Utilities.Logging;
+
+using System;
 
 namespace Stone_Red_Utilities.Logging
 {

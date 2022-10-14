@@ -1,4 +1,4 @@
-﻿namespace Stone_Red_Utilities.BoolExtentions
+﻿namespace Stone_Red_C_Sharp_Utilities
 {
     /// <summary>
     /// <see cref="bool"/> Extensions
@@ -12,7 +12,7 @@
         /// <param name="input"></param>
         public static void OneWayTrue(this ref bool bol, bool input)
         {
-            if (bol == false && input)
+            if (!bol && input)
             {
                 bol = true;
             }
@@ -25,7 +25,7 @@
         /// <param name="input"></param>
         public static void OneWayFalse(this ref bool bol, bool input)
         {
-            if (bol == true && !input)
+            if (bol && !input)
             {
                 bol = false;
             }

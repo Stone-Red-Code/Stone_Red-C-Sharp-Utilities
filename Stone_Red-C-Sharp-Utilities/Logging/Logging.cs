@@ -1,11 +1,11 @@
-﻿using Stone_Red_Utilities.ConsoleExtentions;
+﻿using Stone_Red_Utilities.Logging;
 
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.CompilerServices;
 
-namespace Stone_Red_Utilities.Logging
+namespace Stone_Red_C_Sharp_Utilities.Logging
 {
     /// <summary>
     /// Class used for logging
@@ -137,13 +137,13 @@ namespace Stone_Red_Utilities.Logging
         private string GetFormattedString(string format, LogSeverity logSeverity, string source, string message, string memberName, string sourceFilePath, int sourceLineNumber)
         {
             format = format
-               .Replace($"{LogFormatType.DateTime}", "0")
-               .Replace($"{LogFormatType.LogSeverity}", "1")
-               .Replace($"{LogFormatType.LineNumber}", "2")
-               .Replace($"{LogFormatType.FilePath}", "3")
-               .Replace($"{LogFormatType.MemberName}", "4")
-               .Replace($"{LogFormatType.Source}", "5")
-               .Replace($"{LogFormatType.Message}", "6");
+               .Replace(LogFormatType.DateTime, "0")
+               .Replace(LogFormatType.LogSeverity, "1")
+               .Replace(LogFormatType.LineNumber, "2")
+               .Replace(LogFormatType.FilePath, "3")
+               .Replace(LogFormatType.MemberName, "4")
+               .Replace(LogFormatType.Source, "5")
+               .Replace(LogFormatType.Message, "6");
 
             return string.Format(format, DateTime.Now, logSeverity.ToString().ToUpper(), sourceLineNumber, sourceFilePath, memberName, source, message);
         }

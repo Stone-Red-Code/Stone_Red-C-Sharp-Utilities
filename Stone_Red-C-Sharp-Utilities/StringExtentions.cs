@@ -3,7 +3,7 @@ using System.Globalization;
 using System.IO;
 using System.Text;
 
-namespace Stone_Red_Utilities.StringExtentions
+namespace Stone_Red_C_Sharp_Utilities
 {
     /// <summary>
     /// <see cref="string"/> Extensions
@@ -71,7 +71,7 @@ namespace Stone_Red_Utilities.StringExtentions
                 UnicodeCategory unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
                 if (unicodeCategory != UnicodeCategory.NonSpacingMark)
                 {
-                    stringBuilder.Append(c);
+                    _ = stringBuilder.Append(c);
                 }
             }
 
@@ -106,7 +106,7 @@ namespace Stone_Red_Utilities.StringExtentions
                 UnicodeCategory unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
                 if (unicodeCategory != UnicodeCategory.NonSpacingMark)
                 {
-                    stringBuilder.Append(c);
+                    _ = stringBuilder.Append(c);
                 }
             }
 
@@ -123,7 +123,7 @@ namespace Stone_Red_Utilities.StringExtentions
         {
             if (str.Length > length && length > 0)
             {
-                return str.Substring(0, length);
+                return str[..length];
             }
 
             return str;
@@ -142,11 +142,11 @@ namespace Stone_Red_Utilities.StringExtentions
             {
                 if (ellipsis && length > 3)
                 {
-                    return $"{str.Substring(0, length - 3)}...";
+                    return $"{str[..(length - 3)]}...";
                 }
                 else
                 {
-                    return str.Substring(0, length);
+                    return str[..length];
                 }
             }
 
@@ -184,7 +184,7 @@ namespace Stone_Red_Utilities.StringExtentions
             {
                 if (!char.IsWhiteSpace(c))
                 {
-                    result.Append(c);
+                    _ = result.Append(c);
                 }
             }
             return result.ToString();

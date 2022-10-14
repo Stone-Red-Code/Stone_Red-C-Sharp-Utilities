@@ -3,7 +3,7 @@
     /// <summary>
     ///  Specifies the info type of the log message format.
     /// </summary>
-    public class LogFormatType
+    public static class LogFormatType
     {
         /// <summary>
         /// The <see cref="System.DateTime"/> of the log message.
