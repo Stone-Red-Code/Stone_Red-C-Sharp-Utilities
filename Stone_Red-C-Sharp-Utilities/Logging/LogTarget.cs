@@ -1,9 +1,11 @@
-﻿namespace Stone_Red_C_Sharp_Utilities.Logging
+﻿using System;
+
+namespace Stone_Red_C_Sharp_Utilities.Logging
 {
     /// <summary>
     /// Specifies the target of the log message.
     /// </summary>
-    [System.Flags]
+    [Flags]
     public enum LogTarget
     {
         /// <summary>

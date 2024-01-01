@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Stone_Red-C-Sharp-Utilities" Version="1.0.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Stone_Red-C-Sharp-Utilities\Stone_Red-C-Sharp-Utilities.csproj" />
   </ItemGroup>
 

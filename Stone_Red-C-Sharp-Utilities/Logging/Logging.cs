@@ -85,9 +85,13 @@ namespace Stone_Red_C_Sharp_Utilities.Logging
         public void ClearLogFile(LogSeverity logSeverity)
         {
             OutputConfig outputConfig = GetOutputConfig(logSeverity);
-            if (File.Exists(outputConfig.FilePath))
+
+            lock (outputConfig)
             {
-                File.WriteAllText(outputConfig.FilePath, string.Empty);
+                if (File.Exists(outputConfig.FilePath))
+                {
+                    File.WriteAllText(outputConfig.FilePath, string.Empty);
+                }
             }
         }
 
@@ -111,14 +115,17 @@ namespace Stone_Red_C_Sharp_Utilities.Logging
                 Trace.WriteLine(debugOutput);
             }
 
-            if ((outputConfig.LogTarget & LogTarget.File) == LogTarget.File)
+            lock (outputConfig)
             {
-                if (!File.Exists(outputConfig.FilePath))
+                if ((outputConfig.LogTarget & LogTarget.File) == LogTarget.File)
                 {
-                    File.Create(outputConfig.FilePath).Close();
-                }
+                    if (!File.Exists(outputConfig.FilePath))
+                    {
+                        File.Create(outputConfig.FilePath).Close();
+                    }
 
-                File.AppendAllLines(outputConfig.FilePath, new[] { fileOutput });
+                    File.AppendAllLines(outputConfig.FilePath, new[] { fileOutput });
+                }
             }
         }
 
