@@ -1,8 +1,8 @@
-﻿using Stone_Red_C_Sharp_Utilities.Logging;
+﻿using Stone_Red_Utilities.Logging;
 
 using System;
 
-namespace Stone_Red_Utilities.Logging
+namespace Stone_Red_C_Sharp_Utilities.Logging
 {
     /// <summary>
     /// Logging configuration.
@@ -48,7 +48,7 @@ namespace Stone_Red_Utilities.Logging
         /// <summary>
         /// The console color of the log message.
         /// </summary>
-        public ConsoleColor Color { get; set; } = ConsoleColor.White;
+        public ConsoleColor ConsoleColor { get; set; } = ConsoleColor.White;
 
         /// <summary>
         /// The target for the log message.
@@ -69,16 +69,16 @@ namespace Stone_Red_Utilities.Logging
         /// <summary>
         /// The format for the debug console.
         /// </summary>
-        public string DebugConsoleFormat { get; set; } = $"{{{LogFormatType.DateTime}:yyyy-MM-dd HH:mm:ss}} | {{{LogFormatType.LogSeverity},-5}} | {{{LogFormatType.Source},-15}} | {{{LogFormatType.Message}}}";
+        public LogFormatBuilder DebugConsoleFormat { get; set; } = $"{{{LogFormatType.DateTime}:yyyy-MM-dd HH:mm:ss}} | {{{LogFormatType.LogSeverity},-5}} | {{{LogFormatType.Source},-15}} | {{{LogFormatType.Message}}}";
 
         /// <summary>
         /// The format for the console.
         /// </summary>
-        public string ConsoleFormat { get; set; } = $"{{{LogFormatType.DateTime}:yyyy-MM-dd HH:mm:ss}} | {{{LogFormatType.LogSeverity},-5}} | {{{LogFormatType.Source},-15}} | {{{LogFormatType.Message}}}";
+        public LogFormatBuilder ConsoleFormat { get; set; } = $"{{{LogFormatType.DateTime}:yyyy-MM-dd HH:mm:ss}} | {{{LogFormatType.LogSeverity},-5}} | {{{LogFormatType.Source},-15}} | {{{LogFormatType.Message}}}";
 
         /// <summary>
         /// The format for the log file.
         /// </summary>
-        public string FileFormat { get; set; } = $"{{{LogFormatType.DateTime}:yyyy-MM-dd HH:mm:ss}} | {{{LogFormatType.LogSeverity},-5}} | {{{LogFormatType.Source},-15}} | {{{LogFormatType.Message}}}";
+        public LogFormatBuilder FileFormat { get; set; } = $"{{{LogFormatType.DateTime}:yyyy-MM-dd HH:mm:ss}} | {{{LogFormatType.LogSeverity},-5}} | {{{LogFormatType.Source},-15}} | {{{LogFormatType.Message}}}";
     }
 }

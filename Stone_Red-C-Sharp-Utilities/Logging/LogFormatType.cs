@@ -1,7 +1,7 @@
-﻿namespace Stone_Red_Utilities.Logging
+﻿namespace Stone_Red_C_Sharp_Utilities.Logging
 {
     /// <summary>
-    ///  Specifies the info type of the log message format.
+    /// Specifies the info type of the log message format.
     /// </summary>
     public static class LogFormatType
     {
@@ -11,7 +11,7 @@
         public const string DateTime = "<DateTime>";
 
         /// <summary>
-        /// The <see cref="Logging.LogSeverity"/> of the log message.
+        /// The <see cref="LogSeverity"/> of the log message.
         /// </summary>
         public const string LogSeverity = "<LogSeverity>";
 

@@ -33,6 +33,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Reactive" Version="6.0.0" />
+    <PackageReference Include="System.Reactive.Linq" Version="6.0.0" />
     <PackageReference Include="System.Text.Json" Version="5.0.2" />
     <PackageReference Include="Vsxmd" Version="1.4.5">
       <PrivateAssets>all</PrivateAssets>
