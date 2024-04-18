@@ -2,6 +2,9 @@
 
 > Provides useful C# methods.
 
+> [!CAUTION]
+> This repository is deprecated. Use the new library available at [https://github.com/Stone-Red-Code/CuteUtils](https://github.com/Stone-Red-Code/CuteUtils)
+
 ## Wiki
 
 * [Home](https://github.com/Stone-Red-Code/Stone_Red-C-Sharp-Utilities/wiki/Home)
